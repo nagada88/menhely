@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-28 15:55+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\allatmenhely\settings.py:126
+msgid "Magyar"
+msgstr "Hungarian"
+
+#: .\allatmenhely\settings.py:127
+msgid "Angol"
+msgstr "English"
+
+#: .\allatmenhely\settings.py:128
+msgid "Német"
+msgstr "German"
+
+#: .\app_menhely\models.py:19 .\app_menhely\models.py:34
+msgid "kutya"
+msgstr "dog"
+
+#: .\app_menhely\models.py:20
+msgid "cica"
+msgstr "cat"
+
+#: .\app_menhely\models.py:21
+msgid "egyéb"
+msgstr "other"
+
+#: .\app_menhely\models.py:24
+msgid "kistestű"
+msgstr "petite"
+
+#: .\app_menhely\models.py:25
+msgid "közepes testű"
+msgstr "medium body"
+
+#: .\app_menhely\models.py:26
+msgid "nagytestű"
+msgstr "large body"
+
+#: .\app_menhely\models.py:29
+msgid "fiú"
+msgstr "boy"
+
+#: .\app_menhely\models.py:30
+msgid "lány"
+msgstr "girl"
+
+#: .\app_menhely\models.py:34
+msgid "kutya/cica"
+msgstr "dog/kitten"
+
+#: .\app_menhely\models.py:35
+msgid "kicsi"
+msgstr "small"
+
+#: .\app_menhely\models.py:35
+msgid "méret"
+msgstr "size"
+
+#: .\app_menhely\models.py:36
+msgid "fiu"
+msgstr "boy"
+
+#: .\app_menhely\models.py:36
+msgid "ivar"
+msgstr "gender"
+
+#: .\app_menhely\templates\allat.html:23 .\app_menhely\templates\hir.html:13
+msgid "Vissza"
+msgstr "Back"
+
+#: .\app_menhely\templates\allat.html:91
+msgid "Mielőtt Örökbefogadnál"
+msgstr "Before you Adopt"
+
+#: .\app_menhely\templates\allat.html:101
+msgid "TOVÁBBI GAZDIKERESŐK"
+msgstr "FURTHER HOST SEARCHERS"
+
+#: .\app_menhely\templates\fogadjorokbe.html:15
+msgid "GAZDIRA VÁRUNK"
+msgstr "WE ARE WAITING FOR A MASTER"
+
+#: .\app_menhely\templates\fogadjorokbe.html:42
+msgid "lássuk"
+msgstr "let's see"
+
+#: .\app_menhely\templates\help.html:13
+msgid "SEGÍTS"
+msgstr "HELP"
+
+#: .\app_menhely\templates\helpcards.html:9
+msgid "Támogassa Menhelyünket"
+msgstr "Support our Shelter"
+
+#: .\app_menhely\templates\helpcards.html:10
+#, python-format
+msgid "Menhelyünk legfőbb forrása az adó 1%% felajánlások és magán adományozók"
+msgstr "The main source of our shelter is tax 1%% donations and private donors"
+
+#: .\app_menhely\templates\hir.html:36
+msgid "TOVÁBBI HÍREINK"
+msgstr "OUR MORE NEWS"
+
+#: .\app_menhely\templates\hirek.html:42
+msgid "HÍREINK"
+msgstr "OUR NEWS"
+
+#: .\app_menhely\templates\hirek.html:56
+msgid "Menhely és Menedék"
+msgstr "Shelter and Refuge"
+
+#: .\app_menhely\templates\hirek.html:57
+msgid ""
+"Solt határában található menhelyünk, amely terheltségtől függően 40-70 "
+"állatnak nyújt menedéket."
+msgstr ""
+"Our shelter is located on the outskirts of Solt, which provides shelter for "
+"40-70 animals, depending on the load."
+
+#: .\app_menhely\templates\hirek.html:61
+msgid "Mentés és Orvosi Ellátás"
+msgstr "Rescue and Medical Care"
+
+#: .\app_menhely\templates\hirek.html:62
+msgid ""
+"Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is "
+"foglalkozunk"
+msgstr ""
+"We also deal with the rescue and medical care of injured animals in "
+"difficult situations"
+
+#: .\app_menhely\templates\hirek.html:66
+msgid "Örökbeadás"
+msgstr "Bequest"
+
+#: .\app_menhely\templates\hirek.html:67
+msgid ""
+"Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)."
+msgstr ""
+"Of course, dogs at our shelter (with some exceptions, they can be adopted)."
+
+#: .\app_menhely\templates\hirlista.html:22
+msgid "Elolvasom"
+msgstr "I'll read it"
+
+#: .\app_menhely\templates\main.html:48
+msgid "kezdőlap"
+msgstr "home page"
+
+#: .\app_menhely\templates\main.html:51
+msgid "bemutatkozás"
+msgstr "introduction"
+
+#: .\app_menhely\templates\main.html:54
+msgid "fogadj örökbe"
+msgstr "adopt me"
+
+#: .\app_menhely\templates\main.html:57
+msgid "segíts"
+msgstr "help"
+
+#: .\app_menhely\templates\main.html:97
+msgid "KÖVESSEN MINKET"
+msgstr "FOLLOW US"

@@ -1,0 +1,27 @@
+{% load static %}
+{% block content %}
+{% load i18n %}
+
+<section class="introduction-section">
+  <div class="container-fluid">
+    <div class="row introduction justify-content-center">
+        <div class="col-lg-4 activity">
+            <a href="#.html"><img src="https://img.icons8.com/ios/100/null/dog-house.png" class="activity-icon" /></a>
+                    <p>{% trans "Menhely és Menedék" %}</p>
+                    {% trans "Solt határában található menhelyünk, amely terheltségtől függően 40-70 állatnak nyújt menedéket." %}
+        </div>
+        <div class="col-lg-4 activity">
+            <a href="#.html"><img src="https://img.icons8.com/cotton/64/null/dog-cone--v3.png" class="activity-icon" /></a>
+                    <p>{% trans "Mentés és Orvosi Ellátás" %}</p>
+                    {% trans "Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is foglalkozunk" %}
+        </div>
+        <div class="col-lg-4 activity">
+            <img src="https://img.icons8.com/ios/100/null/dog-walking.png" class="activity-icon"/>
+                    <p>{% trans "Örökbeadás" %}</p>
+                    {% trans "Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)." %}
+        </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

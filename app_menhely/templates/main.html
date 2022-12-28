@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+<html data-wf-page="5e966657bfb4cdde5c3e404a" data-wf-site="5e966657bfb4cd1e103e404b" lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src={% static 'app_menhely/js/lightbox-plus-jquery.min.js' %}></script>
+<script src={% static 'app_menhely/js/jquery.min.js' %}></script>
+<script src={% static 'app_menhely/js/owl.carousel.min.js' %}></script>
+
+<!-- own css -->
+<link rel="stylesheet" href={% static 'app_menhely/menhely.css' %}>
+<link rel="stylesheet" href={% static 'app_menhely/css/lightbox.css' %}>
+<link rel="stylesheet" href={% static 'app_menhely/css/owl.carousel.min.css' %}>
+<link rel="stylesheet" href={% static 'app_menhely/css/owl.theme.default.min.css' %}>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<title>
+Ágica menedéke
+</title>
+
+</head>
+
+<body>
+
+
+<nav id="mynav" class="navbar navbar-expand-lg navbar-light sticky-top" style="text-align: center;">
+  <div class="container">
+    <a class="navbar-brand navbar-expand menubrand mr-auto" href="hirek"><img src={% static 'app_menhely/images/logo.jpg' %} class="brand-logo brandicon" id="logo"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex" id="navbarTogglerDemo01">
+        <ul class="navbar-nav" id="nvbarnav">
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="hirek.html">{% trans "kezdőlap" %}</a>
+          </li>        
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="bemutatkozas.html">{% trans "bemutatkozás" %}</a>
+          </li>
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="fogadjorokbe.html">{% trans "fogadj örökbe" %}</a>
+          </li>
+          <li class="nav-item menupoint">
+            <a class="nav-link" href="help.html">{% trans "segíts" %}</a>
+          </li>
+        </ul>
+          <div class="languages">
+                <a href="/hu/"><img src="https://img.icons8.com/offices/80/null/hungary.png" {% if "hu" in CURRENT_LANGUAGE %} class="rejts"{% endif %}/> </a>
+
+                <a href="/en/"><img src="https://img.icons8.com/color/96/null/great-britain.png" {% if "en" in CURRENT_LANGUAGE %} class="rejts"{% endif %} /> </a>
+
+                <a href="/de/"><img src="https://img.icons8.com/color/96/null/germany.png"  {% if "de" in CURRENT_LANGUAGE %} class="rejts"{% endif %} /> </a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+{% block content %}
+
+{% endblock content %}
+
+<div class ="container-fluid">
+  <div class="row" style="height: 3px; background: orange;"></div>
+</div>
+
+<div class ="container-fluid">
+  <div class="row">
+    <div class="z-depth-1-half map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6683.644140058373!2d18.967651669395217!3d46.82199355437542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47423f9dcc2bdcf5%3A0xb327081789e985c9!2zw4FnaWNhIFPDqXLDvGx0w6FsbGF0IE1lbmVkw6lrZSBBbGFwaXR2w6FueSDDgWxsYXRvdHRob25h!5e0!3m2!1shu!2shu!4v1668976016626!5m2!1shu!2shu"   style="float: right; margin-bottom: 0 !important;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class ="container-fluid footer">
+  <div class="row pt-5 pb-5">
+      <div class="col-lg-5">
+      </div>
+      <div class="col-lg-2 contacts">
+        <p><img src="https://img.icons8.com/ios/50/null/phone--v1.png"/>&nbsp &nbsp +36303672000 </p>
+        <p><img src="https://img.icons8.com/ios/50/null/filled-message.png"/>&nbsp &nbsp 33aaaagica@gmail.com </p>
+        <p><img src="https://img.icons8.com/ios/50/null/marker--v1.png"/>&nbsp &nbsp Dunaföldvár, Solti út 13501/14, 7020 </p>
+      </div>
+      <div class="col-lg-5 followus">
+        <p>{% trans "KÖVESSEN MINKET" %}</p>
+        <a class="nav-link menusoci" href="https://www.instagram.com/adam.nagy.3133/" target="blank"><i class="fa fa-instagram fa-lg socicon"></i></a>&nbsp &nbsp
+        <a class="nav-link menusoci" href="https://www.instagram.com/adam.nagy.3133/" target="blank"><i class="fa fa-facebook fa-lg socicon"></i></a>
+      </div>
+  </div>
+</div>
+
+
+
+</body>
+<!-- <own js -->
+<script src={% static 'app_menhely/menhely.js' %}></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+  touchDrag: false,
+  mouseDrag: false,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    center: true,
+    nav: true,
+    navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items:3,
+        }
+    }
+})
+
+</script>
+</html>

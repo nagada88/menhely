@@ -1,0 +1,63 @@
+{% extends 'main.html'%}
+{% load static %}       
+{% block content %}
+{% load i18n %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner" style="height: 35vw">
+    <div class="carousel-item active">
+      <img src={% static '/app_menhely/images/carousel1.jpg' %} class="d-block w-100" style="width: auto; max-width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img src={% static '/app_menhely/images/carousel2.jpg' %} class="d-block w-100" style="width: auto; max-width: 100%;">
+    </div>
+    <div class="carousel-item">
+      <img src={% static '/app_menhely/images/carousel3.jpg' %} class="d-block w-100" style="width: auto; max-width: 100%;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    <div class="custom-shape-divider-bottom-1668442914">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</div>
+
+<section class="backgrounded-section pb-5">
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12 pt-5 pb-5"><center> <h1>{% trans "HÍREINK" %}</h1></center></div>
+  </div>
+</div>
+  
+{% include 'hirlista.html' %}
+
+</section>
+
+{% include 'tevekenyseg.html' %}
+
+{% include 'helpcards.html' %}
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 4000
+    })
+  });
+</script>
+
+{% endblock content %}
