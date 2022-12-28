@@ -405,7 +405,7 @@ img {
   position: absolute !important;
   left: 50%;
   transform: translateX(-50%);
-  top: -130px;
+  top: -200px;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
   box-shadow:hsl(20, 00%, 20%) 0 0 20px;
