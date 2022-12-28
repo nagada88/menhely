@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-28 15:55+0100\n"
+"POT-Creation-Date: 2022-12-28 22:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,27 @@ msgstr "Der Rücken"
 msgid "Mielőtt Örökbefogadnál"
 msgstr "Bevor Sie adoptieren"
 
-#: .\app_menhely\templates\allat.html:101
+#: .\app_menhely\templates\allat.html:92
+msgid ""
+"Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
+"leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
+"hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
+"körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
+msgstr ""
+
+#: .\app_menhely\templates\allat.html:93
+msgid ""
+"A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
+"korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az "
+"életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek "
+"és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak "
+"az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket "
+"korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a "
+"menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a "
+"lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
+msgstr ""
+
+#: .\app_menhely\templates\allat.html:100
 msgid "TOVÁBBI GAZDIKERESŐK"
 msgstr "WEITERE GASTSUCHER"
 
@@ -111,8 +131,13 @@ msgid "Támogassa Menhelyünket"
 msgstr "Unterstützen Sie unser Tierheim"
 
 #: .\app_menhely\templates\helpcards.html:10
-#, python-format
-msgid "Menhelyünk legfőbb forrása az adó 1%% felajánlások és magán adományozók"
+#, fuzzy, python-format
+#| msgid ""
+#| "Menhelyünk legfőbb forrása az adó 1%% felajánlások és magán adományozók"
+msgid ""
+"Menhelyünk legfőbb forrásai az adó 1%% felajánlások és magán adományozók "
+"által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói "
+"számára."
 msgstr ""
 "Die Hauptquelle unseres Tierheims sind Steuer 1%% Spenden und private Spender"
 
@@ -123,41 +148,6 @@ msgstr "UNSERE WEITERE NACHRICHTEN"
 #: .\app_menhely\templates\hirek.html:42
 msgid "HÍREINK"
 msgstr "UNSERE NACHRICHTEN"
-
-#: .\app_menhely\templates\hirek.html:56
-msgid "Menhely és Menedék"
-msgstr "Zuflucht und Zuflucht"
-
-#: .\app_menhely\templates\hirek.html:57
-msgid ""
-"Solt határában található menhelyünk, amely terheltségtől függően 40-70 "
-"állatnak nyújt menedéket."
-msgstr ""
-"Am Ortsrand von Solt befindet sich unser Tierheim, das je nach Belastung "
-"40-70 Tieren Unterschlupf bietet."
-
-#: .\app_menhely\templates\hirek.html:61
-msgid "Mentés és Orvosi Ellátás"
-msgstr "Rettung und medizinische Versorgung"
-
-#: .\app_menhely\templates\hirek.html:62
-msgid ""
-"Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is "
-"foglalkozunk"
-msgstr ""
-"Wir kümmern uns auch um die Rettung und medizinische Versorgung von "
-"verletzten Tieren in schwierigen Situationen"
-
-#: .\app_menhely\templates\hirek.html:66
-msgid "Örökbeadás"
-msgstr "Vermächtnis"
-
-#: .\app_menhely\templates\hirek.html:67
-msgid ""
-"Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)."
-msgstr ""
-"Natürlich auch Hunde bei uns im Tierheim (bis auf wenige Ausnahmen können "
-"sie adoptiert werden)."
 
 #: .\app_menhely\templates\hirlista.html:22
 msgid "Elolvasom"
@@ -182,3 +172,38 @@ msgstr "Hilfe"
 #: .\app_menhely\templates\main.html:97
 msgid "KÖVESSEN MINKET"
 msgstr "FOLGE UNS"
+
+#: .\app_menhely\templates\tevekenyseg.html:10
+msgid "Menhely és Menedék"
+msgstr "Zuflucht und Zuflucht"
+
+#: .\app_menhely\templates\tevekenyseg.html:11
+msgid ""
+"Solt határában található menhelyünk, amely terheltségtől függően 40-70 "
+"állatnak nyújt menedéket."
+msgstr ""
+"Am Ortsrand von Solt befindet sich unser Tierheim, das je nach Belastung "
+"40-70 Tieren Unterschlupf bietet."
+
+#: .\app_menhely\templates\tevekenyseg.html:15
+msgid "Mentés és Orvosi Ellátás"
+msgstr "Rettung und medizinische Versorgung"
+
+#: .\app_menhely\templates\tevekenyseg.html:16
+msgid ""
+"Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is "
+"foglalkozunk"
+msgstr ""
+"Wir kümmern uns auch um die Rettung und medizinische Versorgung von "
+"verletzten Tieren in schwierigen Situationen"
+
+#: .\app_menhely\templates\tevekenyseg.html:20
+msgid "Örökbeadás"
+msgstr "Vermächtnis"
+
+#: .\app_menhely\templates\tevekenyseg.html:21
+msgid ""
+"Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)."
+msgstr ""
+"Natürlich auch Hunde bei uns im Tierheim (bis auf wenige Ausnahmen können "
+"sie adoptiert werden)."
