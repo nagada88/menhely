@@ -5,7 +5,7 @@
 <div class="container-fluid hirlista" id="hirhely">
     <div class="row">
         {% for hir in page_obj %}
-            <div class="col-lg-4 col-md-12 pt-5">
+            <div class="col-xl-4 col-lg-12 pt-5">
                 <div class="box-element">
                     <div class="wrapperconstraint-gallery">
                         <a href="hir.html?hirid={{ hir.pk }}">
@@ -16,7 +16,7 @@
                     </div>
                     <div class="news">
                         <p><h2><center><strong>{{ hir.cim }}</strong></center></h2></p>
-                        <p class="hirtartalom">{{ hir.tartalom|truncatechars:100 }}</p>
+                        <p class="hirtartalom">{{ hir.tartalom|truncatechars:200 }}</p>
                     </div>
                 <a href="hir.html?hirid={{ hir.pk }}" class="btn">
                     {% trans "Elolvasom" %}

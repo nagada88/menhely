@@ -34,6 +34,19 @@
     /* padding: 1.5vw 2vw 1vw 2vw; */
 /* } */
 
+@media (min-width: 576px){
+  .allatkartya{
+    width: 95%;
+  }
+  .helpcards{
+    width: 90%;
+  }
+  .allatpicscontainer img{
+  height: 500px;
+  object-fit: cover;
+  }
+}
+
 
 @media (min-width: 768px) {
   header .navbar-default {
@@ -46,22 +59,39 @@
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
   }
-  
+ 
   .hirlista{
-    max-width: 95%;
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .allatkartya{
+    width: 80%;
+  }
+  .helpcards{
+    width: 85%;
+  }  
+  .allatpicscontainer img{
+  height: 350px;
+  object-fit: cover;
   }
 }
 
 @media (min-width: 1400px) {
-  .allatcontainer{
-    padding-left: 15vw;
-    padding-right: 15vw;
-    position: relative;
-  }
   
   .hirlista{
     max-width: 85%;
   }
+}
+
+@media (max-width: 1400px) {
+  .allatcontainer{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
 }
 
 .navbar .navbar-collapse {
@@ -121,7 +151,7 @@ ul.navbar-nav>li.nav-item>a.nav-link.custom{
 /* OVERWRITE BASIC ELEMENTS */
 h1{
   font-family: 'Rubik Distressed', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   margin: 10px auto;
   text-align: center;
@@ -321,16 +351,13 @@ img {
 
 /* ANIMAL OWN SITE */
 .allatmainimg{
-  height: 300px;
-  width: 300px;
-  object-fit: cover;
   border-radius: 1vw;
   transition: transform 0.5s ease;
 }
-.allatcontainer{
- padding-left: 3vw;
- padding-right: 3vw;
- position: relative;
+
+.allatcontainer img{
+  margin-left: auto;
+  margin-right: auto;
 }
   
 .allatnev{
@@ -339,7 +366,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   position:relative;
-  top:-20px;
 }
 
 .row.allat{
@@ -373,10 +399,7 @@ img {
   padding-left: 5vw;
 }
 
-.allatpicscontainer img{
-  height: 260px;
-  object-fit: cover;
-}
+
 
 .wrapperconstraint-allat{
   overflow:hidden;
@@ -464,6 +487,7 @@ img {
   text-align: justify;
   line-height: 150%;
   font-family: Open Sans,sans-serif;
+  padding-left: 5vw;
 }
 
 .hirnev{
@@ -871,9 +895,7 @@ margin-bottom: 0px;
   position: relative;
 }
 
-.owl-carousel{
-  margin: 10px;
-}
+
 .owl-carousel .owl-nav{
   overflow: hidden;
   height: 0px;
@@ -976,14 +998,15 @@ span.img-text:hover {
  transform: scale(1.3);
  opacity: 1;
 }
-/* DEBUG PRINT */
-/* * { */
-  /* outline: 1px solid red; */
-/* } */
+
 
 .rejts{
 display: none;
 visibility: hidden;   
 }
 
-<a href="https://www.freepik.com/free-vector/cute-pattern-with-dog-faces-bones_22991841.htm#query=dog%20bone%20pattern&position=2&from_view=keyword">Image by lesyaskripak</a> on Freepikq
+
+/* DEBUG PRINT */
+/* * { */
+  /* outline: 1px solid red; */
+/* } */
