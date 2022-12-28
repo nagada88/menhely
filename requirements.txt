@@ -9,8 +9,6 @@ colorama==0.4.6
 cycler==0.10.0
 distlib==0.3.0
 Django==4.0.3
-django-crispy==1.8.1
-django-crispy-forms==1.14.0
 django-filter==22.1
 django-parler==2.3
 django-rosetta==0.9.8
