@@ -64,6 +64,10 @@
     width: 95%;
     padding-top: 60px;
   }
+  .allatpicscontainer img{
+  height: 300px;
+  object-fit: cover;
+  }
 }
 
 @media (min-width: 576px){
@@ -74,10 +78,7 @@
   .helpcards{
     width: 80%;
   }
-  .allatpicscontainer img{
-  height: 500px;
-  object-fit: cover;
-  }
+
   .segitscard{
     font-size: 14px;
   }
@@ -100,6 +101,10 @@
     width: 50%;
     height: 100px;
     line-height: 100px;
+  }
+  .allatpicscontainer img{
+  height: 300px;
+  object-fit: cover;
   }
 }
 
@@ -445,6 +450,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   position:relative;
+  padding-bottom: 10px;
 }
 
 .row.allat{
