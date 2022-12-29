@@ -16,18 +16,14 @@ window.onscroll = function () {
           myNav.classList.add("nav-colored");
           $('ul.navbar-nav>li.nav-item>a.nav-link').addClass('custom');
           myNav.classList.remove("nav-transparent");
-          document.getElementById("logo").style.height = "50px";
       }
       else {
           myNav.classList.add("nav-transparent");
           myNav.classList.remove("nav-colored");
           $('ul.navbar-nav>li.nav-item>a.nav-link').removeClass('custom');
 
-          document.getElementById("logo").style.height = "100px";
+
       }
-      var title = this.document.getElementById("anim-mask");
-      var scrollTop = document.documentElement.scrollTop * 0.1;
-      title.style.transform = "translateX(-" + scrollTop + "px)";
 };
 
 

@@ -9,22 +9,22 @@
 
 /* NAVBAR ITEMS */
 .brand-logo{
-  height:100px;
-  transition: all ease-in 0.6s;
+  height:50px;
   padding-right: 100px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 
 /* NAVBAR ITEMS */
 .navbar-fixed-top.scrolled {
-  transition: background-color 200ms linear;
 }
 
 .navbar .navbar-nav {
   margin:0 auto;
   padding: 0 auto;
   font-family: Unica One;
-  font-size: 2rem;
+  font-size: 24px;
   width: 100%;
   justify-content: space-between;
   padding-right: 50px;
@@ -33,6 +33,35 @@
 /* .navbar .nav-item.menupoint{ */
     /* padding: 1.5vw 2vw 1vw 2vw; */
 /* } */
+
+@media (max-width: 576px){
+  .owl-carousel .prev-slide{
+      left: -7px;
+      visibility: hidden;
+  }
+  .owl-carousel .next-slide{
+      right: -7px;
+      visibility: hidden;
+  }
+  .row.fogadjorokbe{
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  .header{
+    height: 200px;    
+  }
+  .fogadjorokbe-felirat {
+    top: -32px;
+    font-size: 20px;
+    width: 60%;
+    height: 60px;
+    line-height: 60px;
+  }
+  .segitsleiras{
+    margin-top: 40px;
+  }
+
+}
 
 @media (min-width: 576px){
   .allatkartya{
@@ -44,6 +73,29 @@
   .allatpicscontainer img{
   height: 500px;
   object-fit: cover;
+  }
+  .segitscard{
+    font-size: 14px;
+  }
+  .owl-carousel .prev-slide{
+      left: -33px;
+  }
+  .owl-carousel .next-slide{
+      right: -33px;
+  }
+  .header{
+    height: 600px;    
+  }
+
+  .segitsleiras{
+    margin-top: 80px;
+  }
+  .fogadjorokbe-felirat {
+    top: -50px;
+    font-size: 24px;
+    width: 50%;
+    height: 100px;
+    line-height: 100px;
   }
 }
 
@@ -59,9 +111,25 @@
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
   }
- 
+  
+  .row.fogadjorokbe{
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+  
   .hirlista{
     max-width: 75%;
+  }
+  .owl-carousel .prev-slide{
+      left: -33px;
+  }
+  .owl-carousel .next-slide{
+      right: -33px;
+  }
+  .fogadjorokbe-felirat {
+    top: -50px;
+    font-size: 24px;
+    width: 50%;
   }
 }
 
@@ -76,6 +144,16 @@
   height: 350px;
   object-fit: cover;
   }
+  .segitscard{
+    font-size: 17px;
+  }
+  .owl-carousel .prev-slide{
+      left: -33px;
+  }
+  .owl-carousel .next-slide{
+      right: -33px;
+  }
+
 }
 
 @media (min-width: 1400px) {
@@ -127,7 +205,7 @@ ul.navbar-nav>li.nav-item>a.nav-link.custom{
 /* OVERWRITE BASIC ELEMENTS */
 h1{
   font-family: 'Rubik Distressed', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin: 10px auto;
   text-align: center;
@@ -137,7 +215,7 @@ h1{
 
 h2{
   font-family: 'Baloo Thambi 2', cursive;
-  font-size: 2.2rem;
+  font-size: 20px;
 }
 
 
@@ -195,7 +273,7 @@ img {
 
 .activity{
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 20px;
   text-align: center;
   padding-left: 3vw;
   padding-right: 3vw;
@@ -207,7 +285,7 @@ img {
 
 .activity p{
   padding-top: 1vw;
-  font-size: 2.5rem;
+  font-size: 24px;
   font-family: Unica One;
   color: black;
 }
@@ -246,7 +324,7 @@ img {
   -webkit-transition-property: background, color;
   transition-property: background, color;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 20px;
   color: #000;
   letter-spacing: 0.0001vw;
 }
@@ -258,7 +336,7 @@ img {
   content: '';
   width: 23px;
   height: 20px;
-  vertical-align: -2px;
+  vertical-align: -3px;
 }
 
 .btn:hover{
@@ -307,24 +385,43 @@ img {
 
 .roundedpics-fogadjorokbe{
   position: relative;
-  height: 700px;
+  overflow: visible;
 }
+
+.header{
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  border-radius:  0 0 20vw 7vw ;
+  overflow: hidden;
+  display: flex;
+}
+
+.header img{
+  object-fit: cover;
+  width:100%;
+  height:auto;
+}
+
 
 .fogadjorokbe-felirat {
   position: absolute !important;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
   box-shadow:hsl(40, 20%, 50%) 0 0 20px;
   background: #d4d1cb;
-  padding: 2vw 3vw;
   font-family: 'Rubik Distressed', cursive;
-  display: inline-block;
-  font-size: 50px;
+  vertical-align: middle;
   color: #000;
   text-align: center;
+
+}
+
+.segitscont{
+  height:100px;
+  position: absolute;
 }
 
 /* ANIMAL OWN SITE */
@@ -419,7 +516,7 @@ img {
 
 /* NEWS */
 .newspic{
-  height: 350px;
+  height: 300px;
   display: flex;
   overflow: hidden;
   border-radius: 20px;
@@ -446,7 +543,7 @@ img {
   background-color: #dee2e3;
   color: #464747;
   border-radius: 1px;
-  height: 800px;
+  height: 600px;
   padding-left: 0;
   font-size: 14px;
   justify-content: center;
@@ -457,6 +554,12 @@ img {
   position:relative;
 }
 
+.datum{
+  font-size: 14px;
+  text-align: right;
+  margin-right:30px;
+  font-family: 'Baloo Thambi 2', cursive;
+}
 .box-element a:hover, a:visited, a:link, a:active{
   text-decoration: none;
 }
@@ -494,13 +597,13 @@ img {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 30px;
-  font-size: 1.5rem;
+  font-size: 17px;
 }
 
 /* INTRODUCTION SITE */
 .tortenet{
   border-radius: 10px;
-  font-size: 23px;
+  font-size: 17px;
   padding: 16px;
   text-align: justify;
   color: #69786e;
@@ -534,7 +637,7 @@ max-width: 100%;
 
 .wrapperconstraint-gallery{
   overflow:hidden;
-  height: 350px;
+  height: 300px;
   margin-top: 3px;
 }
 
@@ -571,6 +674,9 @@ max-width: 100%;
   padding-top:10px;
 }
 
+.owl-theme .owl-nav{
+  margin-top: -10px !important;
+}
 .description {
   position: absolute;
   background-color: rgba(230, 230, 230, 0.9);
@@ -602,8 +708,6 @@ max-width: 100%;
 }
 
 .row.fogadjorokbe{
-  padding-left: 40px;
-  padding-right: 70px;
   animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -618,7 +722,12 @@ max-width: 100%;
 
 .filterfield{
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 1.2em;
+    font-size: 14px;
+}
+
+.filterfield select{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 10px;
 }
 
 .form-submit-button {
@@ -685,6 +794,16 @@ opacity:0.8;
 text-align: center;
 }
 
+.step-links img{
+  height: 25px;
+  opacity: 0.7;
+  transition: 0.3s linear;
+}
+
+.step-links img:hover{
+  opacity: 1;
+  transform: scale(1.05);
+}
 .pager{
 font-size: 20px;
 font-family: Unica One;
@@ -711,7 +830,7 @@ margin-bottom: 0px;
 
 .segitsleiras{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 17px;
   padding: 40px;
   text-align: justify;
   color: #5c5e5c;
@@ -721,20 +840,23 @@ margin-bottom: 0px;
   background-blend-mode: lighten;
 }
 
+.segitsleiras h2{
+  font-size:28px;
+}
+
 .segitscard{
-  height: 700px;
+  height: 450px;
   border-radius: 10px;
   background-color: #f5f2f2;
   margin-left: 25px;
   margin-right: 25px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
   padding-top: 70px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #5c5e5c;
-  font-size: 1.4rem;
   transition: 0.3s linear;
   box-shadow:hsl(40, 00%, 70%) 0 0 25px;
 }
@@ -775,7 +897,7 @@ margin-bottom: 0px;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: inline-block;
-  font-size: 24px;
+  font-size: 17px;
   color: #000;
 }
 
@@ -800,7 +922,7 @@ margin-bottom: 0px;
 
 .followus{
   font-family: 'Rubik Distressed', cursive;
-  font-size: 1.7rem;
+  font-size: 20px;
   text-align: center;
   color: #dedede;
 }
@@ -813,7 +935,7 @@ margin-bottom: 0px;
   text-align: center;
   color: #dedede;
   font-family: Vollkorn;
-  font-size: 1.2rem;
+  font-size: 15px;
 }
 
 .contacts img{
@@ -830,23 +952,6 @@ margin-bottom: 0px;
   transform:scale(1.6);
 }
 
-
-/* HEADER */
-.header{
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  border-radius:  0 0 20vw 7vw ;
-  overflow: hidden;
-  height: 600px;
-  display: flex;
-}
-
-.header img{
-  object-fit: cover;
-  width:100%;
-  height:auto;
-}
 
 /* CAROUSEL DIVIDER */
 .custom-shape-divider-bottom-1668442914 {
@@ -878,7 +983,6 @@ margin-bottom: 0px;
 
 .owl-carousel .owl-nav{
   overflow: hidden;
-  height: 0px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, 
@@ -903,11 +1007,9 @@ margin-bottom: 0px;
 
 .owl-carousel .prev-slide{
     background: url("https://img.icons8.com/ios/50/null/back--v1.png") no-repeat scroll -10px 0px;
-    left: -33px;
 }
 .owl-carousel .next-slide{
     background: url("https://img.icons8.com/ios/50/null/forward--v1.png") no-repeat scroll -10px 0px;
-    right: -33px;
 }
 .owl-carousel .prev-slide:hover{
   opacity: 0.5;

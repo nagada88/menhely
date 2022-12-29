@@ -1,69 +1,69 @@
 {% load static %}
 {% block content %}
 {% load i18n %}
-<section class="backgrounded-section">
-    <div class="container-fluid"><div class="row" style="height:100px"></div></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col segitsleiras">
-                <center><h2>{% trans "Támogassa Menhelyünket" %}</h2>
-                <p>{% trans "Menhelyünk legfőbb forrásai az adó 1% felajánlások és magán adományozók által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói számára." %}</p></center>
-            </div>
+
+<!-- <div class="container-fluid"><div class="row" style="height:100px"></div></div> -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col segitsleiras">
+            <center><h2>{% trans "Támogassa Menhelyünket" %}</h2>
+            <p>{% trans "Menhelyünk legfőbb forrásai az adó 1% felajánlások és magán adományozók által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói számára." %}</p></center>
         </div>
     </div>
-    <div class="container-fluid helpcards">
-        <div class="row">
-            <div class="carousel-wrap">
-                <div class="owl-carousel owl-theme">        
-                        <div class="segitscard">
-                            <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
-                            <h2>Adó 1%</h2><br>
-                            <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
-                            <br><b>18648355-1-17</b></p>
-                        </div>      
-                        <div class="segitscard">
-                            <img src="https://img.icons8.com/ios/50/null/paypal.png"/><br>
-                            <h2>Paypal</h2><br>
-                            <p>Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni
-                            <form action="https://www.paypal.com/donate" method="post" target="_top" class="paypal">
-                             <!-- Identify your business so that you can collect the payments. -->
-                             <input type="hidden" name="business" value="33agica@gmail.com">
-                             <!-- Specify details about the contribution -->
-                             <input type="hidden" name="no_recurring" value="0">
-                             <input type="hidden" name="item_name" value="Agica Serult Allat Menedeke">
-                             <input type="hidden" name="item_number" value="Agica Menhely tamogatasa">
-                             <input type="hidden" name="currency_code" value="HUF"><br>
-                             <!-- Display the payment button. -->
-                             <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Adományozok" class="paypalimg">
-                             <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
-                            </form>
-                        </div>
-                        <div class="segitscard">
-                            <img src="https://img.icons8.com/external-goofy-line-kerismaker/96/null/external-Transfer-finance-goofy-line-kerismaker.png"/><br>
-                            <h2>Banki átutalás</h2><br>
-                            <p>Bank: <b>Otp Bank</b><br>
-                            HU65 <b id="myInput">11732301-20010915-00000000</b><br>
-                            SWIFT: <b>(BIC) OTP VHUHB</b><br><br>
-                            <button class="segitscard-button" onclick="myFunction()">Számlaszám másolása</button></p>
-                        </div>
-                        <div class="segitscard">
-                            <img src="https://img.icons8.com/ios/100/null/card-in-use.png"/><br>
-                            <h2>Bankkártyás fizetés</h2><br>
-                            <p>Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés indult az adjukossze.hu
-                            oldalon, ahol különböző összegekkel támogathasz akár egyszeri, akár rendszeres módon.</p>
-                            <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Bankkártyával adományozok</button></a></p>
-                        </div>
-                        <div class="segitscard">
-                            <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/null/external-call-currency-icongeek26-outline-icongeek26.png"/><br>
-                            <h2>Adhat vonal</h2><br>
-                            <p>Amennyiben telefonos hívás segítségével szeretne segíteni, hívja a <b>13600</b>-as számot és gépelje be a <b>28</b>-as kódot!</p>
-                            <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Részletek</button></a></p>
-                        </div>                        
-                </div>
-            </div>            
-        </div>
-    </div>   
-    <div class="container-fluid"><div class="row" style="height:100px"></div></div>
-</section>
+</div>
+<div class="container helpcards">
+    <div class="row">
+        <div class="carousel-wrap">
+            <div class="owl-carousel owl-theme">        
+                    <div class="segitscard">
+                        <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
+                        <h2>Adó 1%</h2><br>
+                        <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
+                        <br><b>18648355-1-17</b></p>
+                    </div>      
+                    <div class="segitscard">
+                        <img src="https://img.icons8.com/ios/50/null/paypal.png"/><br>
+                        <h2>Paypal</h2><br>
+                        <p>Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni
+                        <form action="https://www.paypal.com/donate" method="post" target="_top" class="paypal">
+                         <!-- Identify your business so that you can collect the payments. -->
+                         <input type="hidden" name="business" value="33agica@gmail.com">
+                         <!-- Specify details about the contribution -->
+                         <input type="hidden" name="no_recurring" value="0">
+                         <input type="hidden" name="item_name" value="Agica Serult Allat Menedeke">
+                         <input type="hidden" name="item_number" value="Agica Menhely tamogatasa">
+                         <input type="hidden" name="currency_code" value="HUF"><br>
+                         <!-- Display the payment button. -->
+                         <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Adományozok" class="paypalimg">
+                         <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+                        </form>
+                    </div>
+                    <div class="segitscard">
+                        <img src="https://img.icons8.com/external-goofy-line-kerismaker/96/null/external-Transfer-finance-goofy-line-kerismaker.png"/><br>
+                        <h2>Banki átutalás</h2><br>
+                        <p>Bank: <b>Otp Bank</b><br>
+                        HU65<b> 11732301 20010915 00000000</b><br>
+                        SWIFT: <b>(BIC) OTP VHUHB</b><br><br>
+                        <button class="segitscard-button" onclick="myFunction()">Számlaszám másolása</button></p>
+                    </div>
+                    <div class="segitscard">
+                        <img src="https://img.icons8.com/ios/100/null/card-in-use.png"/><br>
+                        <h2>Bankkártyás fizetés</h2><br>
+                        <p>Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés indult az adjukossze.hu
+                        oldalon, ahol különböző összegekkel támogathasz akár egyszeri, akár rendszeres módon.</p>
+                        <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Bankkártyával adományozok</button></a></p>
+                    </div>
+                    <div class="segitscard">
+                        <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/null/external-call-currency-icongeek26-outline-icongeek26.png"/><br>
+                        <h2>Adhat vonal</h2><br>
+                        <p>Amennyiben telefonos hívás segítségével szeretne segíteni, hívja a <b>13600</b>-as számot és gépelje be a <b>28</b>-as kódot!</p>
+                        <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Részletek</button></a></p>
+                    </div>                        
+            </div>
+        </div>            
+    </div>
+</div>   
+<div class="container-fluid"><div class="row" style="height:100px"></div></div>
+
 
 {% endblock content %}

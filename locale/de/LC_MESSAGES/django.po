@@ -64,7 +64,7 @@ msgstr "Mädchen"
 
 #: .\app_menhely\models.py:34
 msgid "kutya/cica"
-msgstr "Hund/Kätzchen"
+msgstr "Spezies"
 
 #: .\app_menhely\models.py:35
 msgid "kicsi"
@@ -116,7 +116,7 @@ msgstr "WEITERE GASTSUCHER"
 
 #: .\app_menhely\templates\fogadjorokbe.html:15
 msgid "GAZDIRA VÁRUNK"
-msgstr "WIR WARTEN AUF EINEN MEISTER"
+msgstr "MEISTER SUCHEN"
 
 #: .\app_menhely\templates\fogadjorokbe.html:42
 msgid "lássuk"

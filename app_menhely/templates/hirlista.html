@@ -5,18 +5,19 @@
 <div class="container-fluid hirlista" id="hirhely">
     <div class="row">
         {% for hir in page_obj %}
-            <div class="col-xl-4 col-lg-12 pt-5">
+            <div class="col-xl-4 col-lg-12 pb-5">
                 <div class="box-element">
                     <div class="wrapperconstraint-gallery">
                         <a href="hir.html?hirid={{ hir.pk }}">
                             <div class="newspic">
-                                <img src={{ hir.hir_main_img.url }} class="cover">
+                                <img src={{ hir.hir_main_img_tumb.url }} class="cover">
                             </div>
                         </a>
                     </div>
                     <div class="news">
                         <p><h2><center><strong>{{ hir.cim }}</strong></center></h2></p>
-                        <p class="hirtartalom">{{ hir.tartalom|truncatechars:200 }}</p>
+                        <p class="hirtartalom">{{ hir.tartalom|truncatechars:150 }}</p>
+                        <p class="datum">{{ hir.created_at|date:"M d, Y"  }}</p>
                     </div>
                 <a href="hir.html?hirid={{ hir.pk }}" class="btn">
                     {% trans "Elolvasom" %}
@@ -29,7 +30,7 @@
 
 <div class="container-lg pt-4 pb-5">
     <div class="row">
-        <div class="col-lg-12 pager">
+        <div class="col-lg-12 pager pt-2">
                 <span class="step-links">
                     {% if page_obj.has_previous %}
                         <a href="?page=1#hirhely"><img src="https://img.icons8.com/ios/50/null/skip-to-start--v1.png"/></a>
