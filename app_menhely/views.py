@@ -65,7 +65,7 @@ def gyik(request):
     return render(request, 'gyik.html', {})
     
 def hirek(request):
-    hirek = Hirek.objects.all()
+    hirek = Hirek.objects.all().order_by('-created_at')
     paginator = Paginator(hirek, 3)
 
     page_number = request.GET.get('page')
