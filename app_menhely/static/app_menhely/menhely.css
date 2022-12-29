@@ -60,12 +60,16 @@
   .segitsleiras{
     margin-top: 40px;
   }
-
+  .allatkartya{
+    width: 95%;
+    padding-top: 60px;
+  }
 }
 
 @media (min-width: 576px){
   .allatkartya{
     width: 95%;
+    padding-top: 100px;
   }
   .helpcards{
     width: 80%;
