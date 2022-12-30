@@ -226,7 +226,7 @@ class Bemutatkozas(TranslatableModel):
 
         # Save thumbnail to in-memory file as StringIO
         temp_thumb = BytesIO()
-        image.save(temp_thumb, FTYPE)
+        image.save(temp_thumb, FTYPE, quality=50, subsampling=3)
         temp_thumb.seek(0)
 
         # set save=False, otherwise it will run in an infinite loop
