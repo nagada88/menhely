@@ -581,6 +581,12 @@ img {
 
 }
 
+.sadanimal{
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
+  box-shadow:hsl(40, 20%, 50%) 0 0 60px;
+  background: #d4d1cb;
+}
 .segitscont{
   height:100px;
   position: absolute;
@@ -1322,6 +1328,9 @@ display: none;
 visibility: hidden;   
 }
 
+.notfound{
+  font-size:40px;
+}
 
 /* DEBUG PRINT */
 /* * { */

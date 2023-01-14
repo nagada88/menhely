@@ -1,5 +1,6 @@
 {% load static %}
 {% block content %}
+{% load i18n %}
 <div class="container-fluid">
     {% for allat in page_obj %}
     {% if forloop.counter0|divisibleby:4 %}
@@ -21,8 +22,18 @@
     {% if forloop.counter|divisibleby:4  or forloop.last %}
         </div></div>
     {% endif %}
+    {% empty %}
+        <div class="row">
+            <div class="col-xl-4"></div>
+            <div class="col-xl-4">
+                <p><h2><b><center class="notfound">{% trans "Nem található ilyen állat :(" %}</center></b></h2></p>
+                <img src={% static 'app_menhely/images/saddog.jpg' %} class="sadanimal" />
+            </div>
+            <div class="col-xl-4"></div>
+        </div>
     {% endfor %}
 </div>
+
 
 <div class="container-lg pt-4 pb-5">
     <div class="row">
@@ -32,11 +43,12 @@
                         <a href="?page=1"><img src="https://img.icons8.com/ios/50/null/skip-to-start--v1.png"/></a>
                         <a href="?page={{ page_obj.previous_page_number }}"><img src="https://img.icons8.com/ios/50/null/rewind.png"/></a>
                     {% endif %}
-
-                    <span class="current">
-                        {{ page_obj.number }}/{{ page_obj.paginator.num_pages }}.
-                    </span>
-
+                    
+                    {% if page_obj.all %}
+                        <span class="current">
+                            {{ page_obj.number }}/{{ page_obj.paginator.num_pages }}.
+                        </span>
+                    {% endif %}
                     {% if page_obj.has_next %}
                         <a href="?page={{ page_obj.next_page_number }}"><img src="https://img.icons8.com/ios/50/null/fast-forward.png"/></a>
                         <a href="?page={{ page_obj.paginator.num_pages }}"><img src="https://img.icons8.com/ios/50/null/end--v1.png"/></a>

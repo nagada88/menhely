@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-14 15:31+0100\n"
+"POT-Creation-Date: 2023-01-14 18:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,12 +107,12 @@ msgid "BEMUTATKOZÁS"
 msgstr ""
 
 #: .\app_menhely\templates\bemutatkozas.html:20
-#: .\app_menhely\templates\hirek.html:50
+#: .\app_menhely\templates\hirek.html:51
 msgid "Kik Vagyunk?"
 msgstr ""
 
 #: .\app_menhely\templates\bemutatkozas.html:24
-#: .\app_menhely\templates\hirek.html:54
+#: .\app_menhely\templates\hirek.html:55
 msgid ""
 "Az Ágica Sérültállat Menedéke Alapítvány története 2015-ig nyúlik vissza. "
 "Zachariás Ágnes (Ágica) - a menhely alapítója - eddigre már számtalan "
@@ -135,7 +135,7 @@ msgid ""
 msgstr ""
 
 #: .\app_menhely\templates\bemutatkozas.html:26
-#: .\app_menhely\templates\hirek.html:56
+#: .\app_menhely\templates\hirek.html:57
 msgid ""
 "A menhely célkitűzése, hogy olyan sérült, beteg, kiszolgáltatott állatoknak "
 "is jusson segítség, akiknek máshogy nincs esély túlélni. Azok a "
@@ -147,7 +147,7 @@ msgid ""
 msgstr ""
 
 #: .\app_menhely\templates\bemutatkozas.html:28
-#: .\app_menhely\templates\hirek.html:58
+#: .\app_menhely\templates\hirek.html:59
 #, python-format
 msgid ""
 "Az alapítvány működését alapvetően befolyásolja a támogatóink által adott "
@@ -209,15 +209,15 @@ msgstr ""
 msgid "Bankkártyával adományozok"
 msgstr ""
 
-#: .\app_menhely\templates\hir.html:37
+#: .\app_menhely\templates\hir.html:39
 msgid "TOVÁBBI HÍREINK"
 msgstr ""
 
-#: .\app_menhely\templates\hirek.html:43
+#: .\app_menhely\templates\hirek.html:44
 msgid "ÁGICA ÁLLATOTTHONA SOLT"
 msgstr ""
 
-#: .\app_menhely\templates\hirek.html:55
+#: .\app_menhely\templates\hirek.html:56
 msgid ""
 " A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli "
 "mindennapjait, keresi gazdáját. Az évek során mentettünk már teljesen "
@@ -227,7 +227,7 @@ msgid ""
 "és FIV vírussal fertőzött cicusok."
 msgstr ""
 
-#: .\app_menhely\templates\hirek.html:70
+#: .\app_menhely\templates\hirek.html:71
 msgid "HÍREINK"
 msgstr ""
 
@@ -273,6 +273,10 @@ msgstr ""
 
 #: .\app_menhely\templates\main.html:131
 msgid "V: "
+msgstr ""
+
+#: .\app_menhely\templates\orokbefogadhato.html:29
+msgid "Nem található ilyen állat :("
 msgstr ""
 
 #: .\app_menhely\templates\orokbefogadott.html:19

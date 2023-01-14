@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-14 15:31+0100\n"
+"POT-Creation-Date: 2023-01-14 18:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,12 +107,12 @@ msgid "BEMUTATKOZÁS"
 msgstr "INTRODUCTION"
 
 #: .\app_menhely\templates\bemutatkozas.html:20
-#: .\app_menhely\templates\hirek.html:50
+#: .\app_menhely\templates\hirek.html:51
 msgid "Kik Vagyunk?"
 msgstr "Who we are?"
 
 #: .\app_menhely\templates\bemutatkozas.html:24
-#: .\app_menhely\templates\hirek.html:54
+#: .\app_menhely\templates\hirek.html:55
 msgid ""
 "Az Ágica Sérültállat Menedéke Alapítvány története 2015-ig nyúlik vissza. "
 "Zachariás Ágnes (Ágica) - a menhely alapítója - eddigre már számtalan "
@@ -122,12 +122,13 @@ msgid ""
 "beteg állatnak adott otthont, akiknek máshogy nem lett volna esélyük a "
 "túlélésre."
 msgstr ""
-"The history of the Ágica Animal Shelter Foundation dates back to 2015. Ágnes"
-" Zacharias (Ágica) - the founder of the shelter - has already sheltered "
-"countless animals in her own home. In 2015, she started building her shelter,"
-" first in her home, and then on a property outside Solt, using her father's "
-"inheritance. The shelter has now housed countless injured, old and sick "
-"animals who otherwise would not have had a chance to survive."
+"The history of the Ágica Animal Shelter Foundation dates back to 2015. Ágnes "
+"Zacharias (Ágica) - the founder of the shelter - has already sheltered "
+"countless animals in her own home. In 2015, she started building her "
+"shelter, first in her home, and then on a property outside Solt, using her "
+"father's inheritance. The shelter has now housed countless injured, old and "
+"sick animals who otherwise would not have had a chance to survive."
+
 #: .\app_menhely\templates\bemutatkozas.html:25
 msgid ""
 " A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli "
@@ -145,8 +146,9 @@ msgstr ""
 "Ágica's home. Among them are 4 carriage dogs, many old, elderly, sick dogs "
 "and cats infected with the FIV virus. At the shelter, two people usually do "
 "the daily work with Ágica, she takes care of the animals alone at home."
+
 #: .\app_menhely\templates\bemutatkozas.html:26
-#: .\app_menhely\templates\hirek.html:56
+#: .\app_menhely\templates\hirek.html:57
 msgid ""
 "A menhely célkitűzése, hogy olyan sérült, beteg, kiszolgáltatott állatoknak "
 "is jusson segítség, akiknek máshogy nincs esély túlélni. Azok a "
@@ -158,12 +160,13 @@ msgid ""
 msgstr ""
 "The aim of the shelter is to provide help to injured, sick and vulnerable "
 "animals who otherwise have no chance of survival. And the luckier animals "
-"who had a chance to be rehabilitated are constantly looking for their loving"
-" owners, where they are seen as real family members. Some of our adoptable "
+"who had a chance to be rehabilitated are constantly looking for their loving "
+"owners, where they are seen as real family members. Some of our adoptable "
 "dogs and some of our dogs found owners can be found on the website. If you "
 "are thinking about adoption, take a look at our animals looking for a home."
+
 #: .\app_menhely\templates\bemutatkozas.html:28
-#: .\app_menhely\templates\hirek.html:58
+#: .\app_menhely\templates\hirek.html:59
 #, python-format
 msgid ""
 "Az alapítvány működését alapvetően befolyásolja a támogatóink által adott "
@@ -171,10 +174,11 @@ msgid ""
 "szeretnéd munkánkat segíteni, akár csak egy kávé árával is, nézz szét a "
 "lehetőséget között a 'segíts' oldalon. "
 msgstr ""
-"The operation of the foundation is fundamentally influenced by the tax 1 percentage "
-"given by our supporters, financial and material donations. If you have the "
-"opportunity and would like to help our work, even with the price of a "
-"coffee, take a look at the possibilities on the 'help' page."
+"The operation of the foundation is fundamentally influenced by the tax 1 "
+"percentage given by our supporters, financial and material donations. If you "
+"have the opportunity and would like to help our work, even with the price of "
+"a coffee, take a look at the possibilities on the 'help' page."
+
 #: .\app_menhely\templates\fogadjorokbe.html:18
 msgid "GAZDIRA VÁRUNK"
 msgstr "WAITIN' FOR A MASTER"
@@ -200,11 +204,12 @@ msgid ""
 "segítettél. Ha sokan így gondolják, akkor pedig távlati céljainkat is el "
 "tudjuk érni. Pénzügyileg az alábbi módokon tudsz segíteni."
 msgstr ""
-"Our Public Foundation is supported by donations and a 1 percentage tax credit. Any "
-"little help is gratefully appreciated! If you can dedicate just the price of"
-" 1 coffee per month to give our rescues a new chance, you have helped a lot."
-" If many people think so, then we can achieve our long-term goals. You can "
-"help financially in the following ways."
+"Our Public Foundation is supported by donations and a 1 percentage tax "
+"credit. Any little help is gratefully appreciated! If you can dedicate just "
+"the price of 1 coffee per month to give our rescues a new chance, you have "
+"helped a lot. If many people think so, then we can achieve our long-term "
+"goals. You can help financially in the following ways."
+
 #: .\app_menhely\templates\helpcards.html:30
 msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
 msgstr "You can donate via paypal by clicking on the button"
@@ -227,20 +232,23 @@ msgid ""
 "indult az adjukossze.hu oldalon, ahol különböző összegekkel támogathasz akár "
 "egyszeri, akár rendszeres módon."
 msgstr ""
-"It is not possible to pay by bank card on our own site, but a donation has"
-" been started on the adjukossze.hu site, where you can support with "
-"different amounts, either one-time or regularly."
+"It is not possible to pay by bank card on our own site, but a donation has "
+"been started on the adjukossze.hu site, where you can support with different "
+"amounts, either one-time or regularly."
+
 #: .\app_menhely\templates\helpcards.html:56
 msgid "Bankkártyával adományozok"
 msgstr "Donate by credit card"
-#: .\app_menhely\templates\hir.html:37
+
+#: .\app_menhely\templates\hir.html:39
 msgid "TOVÁBBI HÍREINK"
 msgstr "FURTHER NEWS"
 
-#: .\app_menhely\templates\hirek.html:43
+#: .\app_menhely\templates\hirek.html:44
 msgid "ÁGICA ÁLLATOTTHONA SOLT"
 msgstr "ÁGICA'S ANIMAL SHELTER SOLT"
-#: .\app_menhely\templates\hirek.html:55
+
+#: .\app_menhely\templates\hirek.html:56
 msgid ""
 " A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli "
 "mindennapjait, keresi gazdáját. Az évek során mentettünk már teljesen "
@@ -255,7 +263,8 @@ msgstr ""
 "saved birds and horses. Residents in worse condition found a safe home in "
 "Ágica's home. Among them are 4 carriage dogs, many old, elderly, sick dogs "
 "and cats infected with the FIV virus."
-#: .\app_menhely\templates\hirek.html:70
+
+#: .\app_menhely\templates\hirek.html:71
 msgid "HÍREINK"
 msgstr "NEWS"
 
@@ -290,24 +299,31 @@ msgstr "contact"
 #: .\app_menhely\templates\main.html:128
 msgid "nyitvatartás"
 msgstr "opening hours"
+
 #: .\app_menhely\templates\main.html:129
 msgid "H-P: "
 msgstr "Mon-Fri:"
+
 #: .\app_menhely\templates\main.html:130
 msgid "SZ: "
 msgstr "SAT:"
+
 #: .\app_menhely\templates\main.html:131
 msgid "V: "
 msgstr "SUN:"
+
+#: .\app_menhely\templates\orokbefogadhato.html:29
+msgid "Nem található ilyen állat :("
+msgstr "This type of animal cannot be found :("
+
 #: .\app_menhely\templates\orokbefogadott.html:19
 msgid "GAZDIRA LELTÜNK"
 msgstr "ADOPTED"
 
 #: .\app_menhely\templates\orokbefogadott.html:22
 msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
-msgstr ""
-"From the animals uploaded to site there were adopted so "
-"far:"
+msgstr "From the animals uploaded to site there were adopted so far:"
+
 #: .\app_menhely\templates\tevekenyseg.html:10
 msgid "Menhely és Menedék"
 msgstr "Shelter and Refuge"
@@ -337,15 +353,17 @@ msgid ""
 msgstr ""
 "Our animals that are rehabilitated and in good condition can be adopted. "
 "Check out the website!"
+
 #, fuzzy, python-format
 #~ msgid ""
 #~ "Menhelyünk legfőbb forrásai az adó 1%% felajánlások és magán adományozók "
-#~ "által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói "
-#~ "számára."
+#~ "által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis "
+#~ "lakói számára."
 #~ msgstr ""
 #~ "The main sources of our shelter are tax 1%% donations and amounts "
 #~ "transferred by private donors. You can help the little residents of our "
 #~ "shelter in the following ways."
+
 #~ msgid "KÖVESSEN MINKET"
 #~ msgstr "FOLLOW US"
 
@@ -353,16 +371,19 @@ msgstr ""
 #~ "Solt határában található menhelyünk, amely terheltségtől függően 40-70 "
 #~ "állatnak nyújt menedéket."
 #~ msgstr ""
-#~ "Our shelter is located on the outskirts of Solt, which provides shelter for "
-#~ "40-70 animals, depending on the load."
+#~ "Our shelter is located on the outskirts of Solt, which provides shelter "
+#~ "for 40-70 animals, depending on the load."
+
 #~ msgid ""
-#~ "Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is "
-#~ "foglalkozunk"
+#~ "Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával "
+#~ "is foglalkozunk"
 #~ msgstr ""
 #~ "We also deal with the rescue and medical care of injured animals in "
 #~ "difficult situations"
 
 #~ msgid ""
-#~ "Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)."
+#~ "Természetesen menhelyünkön lévő kutyák (néhány kivétellel "
+#~ "örökbefogadhatók)."
 #~ msgstr ""
-#~ "Of course, dogs at our shelter (with some exceptions, they can be adopted)."
+#~ "Of course, dogs at our shelter (with some exceptions, they can be "
+#~ "adopted)."
