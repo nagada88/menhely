@@ -90,7 +90,7 @@
       padding-top: 50px;
   }
   .nempenzbelikep{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     height: auto;
     width: 100%;
@@ -161,17 +161,17 @@
       padding-top: 50px;
   }
   .nempenzbelikep{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
     height: auto;
     width: 100%;
   }
   .nempenzbeli{
     margin-top: 100px;
-    padding-top: 100px;
+    padding-top: 40px;
     /* margin-bottom: 100px; */
-    padding-left: 100px;
-    padding-right: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1105,7 +1105,7 @@ margin-bottom: 0px;
 }
 
 .nempenzbeli{
-    height: 800px;
+    height: 850px;
     width: 100%;
     border-radius: 50px;
     -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
