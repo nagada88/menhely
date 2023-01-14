@@ -45,7 +45,14 @@ INSTALLED_APPS = [
     'app_menhely',
     'rosetta',
     'parler',
+    'django_check_seo',
+    'django.contrib.sites',
+    'cms',
+    'menus',
+    'treebeard',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

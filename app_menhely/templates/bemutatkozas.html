@@ -1,41 +1,45 @@
 {% extends 'main.html'%}
 {% load static %}       
 {% block content %}
-
-    
-<section class="backgrounded-section pb-5">
-
-<div class="container-md pt-3">
-    {% for elem in bemutatkozoelem %}
-    <div class="tortenet pt-5">
+{% load i18n %}
+<div class="container-fluid roundedpics-fogadjorokbe">
+    <div class="row">
+        <div class="col-lg-12 header">
+          <img src={% static '/app_menhely/images/carousel2.jpg' %}>
+        </div>
+    </div>
+</div>
+<section class="backgrounded-section pt-5">
+<div class="fogadjorokbe-felirat">
+    {% trans "BEMUTATKOZÁS" %}
+</div> 
+<div class="container-fluid"><div class="row" style="height:100px"></div></div>
+<div class="container-fluid hirek-bemutatkozas">
+    <div class="pt-5 bemutatkozaskartya" id="bemutatkozaskartya">
         <div class="row">
-            <div class="col-md-12"><h2>{{ elem.cim }}</h2><hr></div>
+            <div class="col-md-12"><h2>{% trans "Kik Vagyunk?" %}</h2><hr></div>
         </div>
         <div class="row">
-            {% if not forloop.counter|divisibleby:2 %} 
-            <div class="col-lg-5 col-md-6 res-margin">
-                <img src={{ elem.bemutatkozas_main_img.url }} style="border-radius: 20px;">
+            <div class="col-xl-7 col-xs-12 col-sm-12 bemutat">
+                <p>{% trans "Az Ágica Sérültállat Menedéke Alapítvány története 2015-ig nyúlik vissza. Zachariás Ágnes (Ágica) - a menhely alapítója - eddigre már számtalan állatnak adott menedéket saját otthonában. 2015-ben édesapja örökségének ráfordításával kezdte építeni a menhelyét először otthonában, majd Solt egy külterületi ingatlanján. A menhely mára már számtalan olyan sérült, öreg, beteg állatnak adott otthont, akiknek máshogy nem lett volna esélyük a túlélésre." %}</p>
+                <p>{% trans " A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli mindennapjait, keresi gazdáját. Az évek során mentettünk már teljesen reménytelen állápotban lévő kutyát, cicát, de volt hogy védett madarat és lovat is. A rosszabb állapotban lévő lakók Ágica otthonában leltek biztonságos otthonra. Köztük 4 kocsis kutyus, sok öreg, idős, beteg kutya, és FIV vírussal fertőzött cicusok. A menhelyen általában ketten végzik a mindennapi munkát Ágicával, otthonában egyedül gondozza az állatokat." %}</p>               
+                <p>{% trans "A menhely célkitűzése, hogy olyan sérült, beteg, kiszolgáltatott állatoknak is jusson segítség, akiknek máshogy nincs esély túlélni. Azok a szerencsésebb állatok pedig, akiknek volt esélyük rehabilitációra folyamatosan keresik szerető gazdijukat, ahol igazi családtagként tekintenek rájuk. A honlapon örökbefogadható kutyáink és gazdára talált kutyáink egy része is megtalálható. Amennyiben örökbefogadáson gondolkozol, nézz szét gazdikereső állataink között. " %}</p>
+                
+                <p>{% trans "Az alapítvány működését alapvetően befolyásolja a támogatóink által adott adó 1%, a pénzügyi és tárgyi adományok. Amennyiben lehetőséged van rá és szeretnéd munkánkat segíteni, akár csak egy kávé árával is, nézz szét a lehetőséget között a 'segíts' oldalon. " %}</p>
+                <br><br>
+                <h2>Távlati céljaink</h2>
+                <p>A menhely tágas kifutóval rendelkezik, és a kutyusoknak van lehetősége komolyabb mozgásra itt. Azonban nagy álmunk, hogy a kifutókat és a kenneleket korszerűsíteni tudjuk, annak érdekében, hogy a kutyák melegben, kényelemben, komfortosan várják az álomgazdit.</p>
             </div>
-            {% endif %}
-            <div class="col-lg-7 col-md-6">
-                {{ elem.tartalom }}<br><br>
+            <div class="col-xl-5 col-xs-12 col-sm-12 pt-5 res-margin">
+                <img src={% static '/app_menhely/images/bemutatkozokartyak/bemutat0.jpg' %} style="border-radius: 20px;">
+                <img src={% static '/app_menhely/images/bemutatkozokartyak/bemutat1.jpg' %} class="bemutat1">
             </div>
-            {% if forloop.counter|divisibleby:2 %} 
-            <div class="col-lg-5 col-md-6 res-margin">
-                <img src={{ elem.bemutatkozas_main_img.url }} %} style="border-radius: 20px;">
-            </div>
-            {% endif %}
         </div> 
     </div><br><br>
-    {% endfor %}
 </div>
 <div class="container-fluid"><div class="row" style="height:100px"></div></div>
 </section>
 
-{% include 'tevekenyseg.html' %}
-
-
-<div class="container-fludid">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" >
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -43,7 +47,7 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   
-  <div class="carousel-inner" style="height: 35vw">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={% static '/app_menhely/images/carousel1.jpg' %} class="d-block w-100" style="width: auto; max-width: 100%;">
     </div>
@@ -62,8 +66,13 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+    <div class="custom-shape-divider-top-1673618994">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+    </div>
 </div>
 
+{% include 'tevekenyseg.html' %}
 
 {% endblock content %}

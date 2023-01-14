@@ -13,6 +13,7 @@ from django.conf.urls.static import static
 import datetime
 from django.utils.translation import gettext_lazy as _
 from parler.models import TranslatableModel, TranslatedFields
+from django import forms
 # Create your models here.
 
 class AllatFaj(models.TextChoices):
@@ -38,8 +39,9 @@ class Allat(models.Model):
     bekerulesideje = models.DateField()
     szuletesiideje = models.DateField()
     ivartalanitva = models.BooleanField()
-    leiras = models.TextField()
-    eletkor = models.IntegerField(blank=True, null=True)
+    leiras = models.TextField(default="Leírás később érkezik. Amennyiben a képek alapján érdeklődnél, keress facebook messengeren vagy telefonon.")
+    eletkor = models.IntegerField(blank=True, null=True, editable=False)
+    orokbeadva = models.BooleanField(default = False)
 
     def __str__(self):
         return self.nev
@@ -51,7 +53,7 @@ class Allat(models.Model):
 
 class AllatMainImage(models.Model):
     allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
-    photo = models.ImageField(upload_to='app_menhely/img/photos/')
+    photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("kiemelt kép"))
     photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)
 
     def save(self, *args, **kwargs):
@@ -95,7 +97,7 @@ class AllatMainImage(models.Model):
 
 class AllatImage(models.Model):
     allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
-    photo = models.ImageField(upload_to='app_menhely/img/photos/')
+    photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("galéria kép"))
     photo_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False)
     
     def save(self, *args, **kwargs):
@@ -137,13 +139,12 @@ class AllatImage(models.Model):
 
         return True            
  
-
         
 class Hirek(TranslatableModel):
     translations = TranslatedFields(cim=models.CharField(max_length=200),
     tartalom=models.TextField())
-    hir_main_img = models.ImageField(upload_to='app_menhely/img/photos')
-    hir_main_img_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False, default="app_menhely/images/bg.jpg")
+    hir_main_img = models.ImageField(upload_to='app_menhely/img/photos', default= '/app_menhely/hiralap.jpg')
+    hir_main_img_tumb = models.ImageField(upload_to='app_menhely/img/thumbs/', editable=False, default="/app_menhely/hiralap.jpg")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -237,3 +238,18 @@ class Bemutatkozas(TranslatableModel):
         
     def __str__(self):
         return self.cim
+        
+class Kapcsolat(TranslatableModel):
+    translations=TranslatedFields(telefonszam = models.CharField(max_length=50),
+    nyitvatartashp=models.CharField(max_length=50),
+    nyitvatartassz=models.CharField(max_length=50),
+    nyitvatartasv=models.CharField(max_length=50),
+    emailcim=models.CharField(max_length=50, default=""),
+    telephely=models.CharField(max_length=50, default=""),
+    )
+    
+
+class Kimutatasok(models.Model):
+    title = models.CharField(max_length=50)
+    file = models.FileField()
+    

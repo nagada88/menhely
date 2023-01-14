@@ -10,7 +10,7 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   
-  <div class="carousel-inner" style="height: 35vw">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={% static '/app_menhely/images/carousel1.jpg' %} class="d-block w-100" style="width: auto; max-width: 100%;">
     </div>
@@ -29,20 +29,47 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-    <div class="custom-shape-divider-bottom-1668442914">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-        </svg>
-    </div>
+  <div class="custom-shape-divider-bottom-1673471490">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+      </svg>
+  </div>
 </div>
 
 <section class="backgrounded-section pb-5">
 <div class="container-fluid">
+  <div class="row intro-gap"></div>
   <div class="row">
-      <div class="col-lg-12 pt-5"><center> <h1>{% trans "HÍREINK" %}</h1></center></div>
+      <div class="col-lg-12 pt-5 pb-5"><center><h1>{% trans "ÁGICA ÁLLATOTTHONA SOLT" %}</h1></center></div>
   </div>
 </div>
   
+<div class="container-fluid hirek-bemutatkozas">
+    <div class="pt-5 bemutatkozaskartya" id="bemutatkozaskartya">
+        <div class="row">
+            <div class="col-md-12"><h2>{% trans "Kik Vagyunk?" %}</h2><hr></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-7 col-xs-12 col-sm-12 bemutat">
+                <p>{% trans "Az Ágica Sérültállat Menedéke Alapítvány története 2015-ig nyúlik vissza. Zachariás Ágnes (Ágica) - a menhely alapítója - eddigre már számtalan állatnak adott menedéket saját otthonában. 2015-ben édesapja örökségének ráfordításával kezdte építeni a menhelyét először otthonában, majd Solt egy külterületi ingatlanján. A menhely mára már számtalan olyan sérült, öreg, beteg állatnak adott otthont, akiknek máshogy nem lett volna esélyük a túlélésre." %}</p>
+                <p>{% trans " A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli mindennapjait, keresi gazdáját. Az évek során mentettünk már teljesen reménytelen állápotban lévő kutyát, cicát, de volt hogy védett madarat és lovat is. A rosszabb állapotban lévő lakók Ágica otthonában leltek biztonságos otthonra. Köztük 4 kocsis kutyus, sok öreg, idős, beteg kutya, és FIV vírussal fertőzött cicusok." %}</p>               
+                <p>{% trans "A menhely célkitűzése, hogy olyan sérült, beteg, kiszolgáltatott állatoknak is jusson segítség, akiknek máshogy nincs esély túlélni. Azok a szerencsésebb állatok pedig, akiknek volt esélyük rehabilitációra folyamatosan keresik szerető gazdijukat, ahol igazi családtagként tekintenek rájuk. A honlapon örökbefogadható kutyáink és gazdára talált kutyáink egy része is megtalálható. Amennyiben örökbefogadáson gondolkozol, nézz szét gazdikereső állataink között. " %}</p>
+                
+                <p>{% trans "Az alapítvány működését alapvetően befolyásolja a támogatóink által adott adó 1%, a pénzügyi és tárgyi adományok. Amennyiben lehetőséged van rá és szeretnéd munkánkat segíteni, akár csak egy kávé árával is, nézz szét a lehetőséget között a 'segíts' oldalon. " %}</p>
+            </div>
+            <div class="col-xl-5 col-xs-12 col-sm-12 pt-5 res-margin">
+                <img src={% static '/app_menhely/images/bemutatkozokartyak/bemutat0.jpg' %} style="border-radius: 20px;">
+                <img src={% static '/app_menhely/images/bemutatkozokartyak/bemutat1.jpg' %} class="bemutat1">
+            </div>
+        </div> 
+    </div><br><br>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+      <div class="col-lg-12 pt-5 pb-5"><center> <h1>{% trans "HÍREINK" %}</h1></center></div>
+  </div>
+</div>
 {% include 'hirlista.html' %}
 
 </section>
@@ -59,6 +86,28 @@
       interval: 4000
     })
   });
+  
+  
+let last_known_scroll_position = 0;
+let ticking = false;
+
+function doSomething(scroll_pos) {
+  // Do something with the scroll position
+  document.getElementById('bemutatkozaskartya').style.transform = 'translateX(' + scroll_pos + '%)';
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY*0.005;
+
+  if (!ticking && ($(window).width() > 960)){
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
 </script>
 
 {% endblock content %}

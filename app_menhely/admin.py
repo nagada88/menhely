@@ -15,3 +15,6 @@ class AllatAdmin(admin.ModelAdmin):
 admin.site.register(Allat, AllatAdmin)
 admin.site.register(Bemutatkozas, TranslatableAdmin)
 admin.site.register(Hirek, TranslatableAdmin)
+admin.site.register(Kapcsolat, TranslatableAdmin)
+admin.site.register(Kimutatasok)
+

@@ -1,31 +1,34 @@
 {% load static %}
 {% block content %}
 {% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
 
 <!-- <div class="container-fluid"><div class="row" style="height:100px"></div></div> -->
 <div class="container-fluid">
     <div class="row">
         <div class="col segitsleiras">
             <center><h2>{% trans "Támogassa Menhelyünket" %}</h2>
-            <p>{% trans "Menhelyünk legfőbb forrásai az adó 1% felajánlások és magán adományozók által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói számára." %}</p></center>
+            <p>{% trans "Közhasznú Alapítványunk adományokból és adó 1% jóváírásból tartja fenn magát. Minden apró segítséget hálásan köszönünk! Ha csak havi 1 kávé árát rá tudod szánni, hogy mentvényeink új esélyt kapjanak, azzal is rengeteget segítettél. Ha sokan így gondolják, akkor pedig távlati céljainkat is el tudjuk érni. Pénzügyileg az alábbi módokon tudsz segíteni." %}</p></center>
         </div>
     </div>
 </div>
 <div class="container helpcards">
     <div class="row">
         <div class="carousel-wrap">
-            <div class="owl-carousel owl-theme">        
-                    <div class="segitscard">
-                        <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
-                        <h2>Adó 1%</h2><br>
-                        <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
-                        <br><b>18648355-1-17</b></p>
-                    </div>      
+            <div class="owl-carousel owl-theme">    
+                    {% if "hu" in CURRENT_LANGUAGE %}
+                        <div class="segitscard">
+                            <img src="https://img.icons8.com/pastel-glyph/64/null/hand-holding-heart--v2.png"/><br>
+                            <h2>Adó 1%</h2><br>
+                            <p>Adó egy százalék felajánlásodat az alábbi adószámra tudod megtenni
+                            <br><b>18648355-1-17</b></p>
+                        </div>
+                    {% endif %}
                     <div class="segitscard">
                         <img src="https://img.icons8.com/ios/50/null/paypal.png"/><br>
                         <h2>Paypal</h2><br>
-                        <p>Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni
-                        <form action="https://www.paypal.com/donate" method="post" target="_top" class="paypal">
+                        <p>{% trans "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni" %}
+                        <form action="https://www.paypal.com/donate" method="post" target="_blank" class="paypal">
                          <!-- Identify your business so that you can collect the payments. -->
                          <input type="hidden" name="business" value="33agica@gmail.com">
                          <!-- Specify details about the contribution -->
@@ -40,30 +43,37 @@
                     </div>
                     <div class="segitscard">
                         <img src="https://img.icons8.com/external-goofy-line-kerismaker/96/null/external-Transfer-finance-goofy-line-kerismaker.png"/><br>
-                        <h2>Banki átutalás</h2><br>
+                        <h2>{% trans "Banki átutalás" %}</h2><br>
                         <p>Bank: <b>Otp Bank</b><br>
-                        HU65<b> 11732301 20010915 00000000</b><br>
+                        HU65<b type="text" id="szamlaszam"> 11732301 20010915 00000000</b><br>
                         SWIFT: <b>(BIC) OTP VHUHB</b><br><br>
-                        <button class="segitscard-button" onclick="myFunction()">Számlaszám másolása</button></p>
+                        <button class="segitscard-button" onclick="myFunction()">{% trans "Számlaszám másolása" %}</button></p>
                     </div>
                     <div class="segitscard">
                         <img src="https://img.icons8.com/ios/100/null/card-in-use.png"/><br>
-                        <h2>Bankkártyás fizetés</h2><br>
-                        <p>Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés indult az adjukossze.hu
-                        oldalon, ahol különböző összegekkel támogathasz akár egyszeri, akár rendszeres módon.</p>
-                        <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Bankkártyával adományozok</button></a></p>
+                        <h2>{% trans "Bankkártyás fizetés" %}</h2>
+                        <p>{% trans "Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés indult az adjukossze.hu oldalon, ahol különböző összegekkel támogathasz akár egyszeri, akár rendszeres módon." %}</p>
+                        <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">{% trans "Bankkártyával adományozok" %}</button></a></p>
                     </div>
-                    <div class="segitscard">
-                        <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/null/external-call-currency-icongeek26-outline-icongeek26.png"/><br>
-                        <h2>Adhat vonal</h2><br>
-                        <p>Amennyiben telefonos hívás segítségével szeretne segíteni, hívja a <b>13600</b>-as számot és gépelje be a <b>28</b>-as kódot!</p>
-                        <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Részletek</button></a></p>
-                    </div>                        
+                    {% if "hu" in CURRENT_LANGUAGE %}
+                        <div class="segitscard">
+                            <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/null/external-call-currency-icongeek26-outline-icongeek26.png"/><br>
+                            <h2>Adhat vonal</h2><br>
+                            <p>Amennyiben telefonos hívás segítségével szeretne segíteni, hívja a <b>13600</b>-as számot és gépelje be a <b>28</b>-as kódot!</p>
+                            <p><a href="https://adjukossze.hu/adomanygyujtes/te-vagy-a-jovonk-agica-serultallat-menedeke-alapitvany-1737/tamogatom" target="_blank"><button class="segitscard-button">Részletek</button></a></p>
+                        </div>   
+                    {% endif %}                    
             </div>
         </div>            
     </div>
 </div>   
 <div class="container-fluid"><div class="row" style="height:100px"></div></div>
 
+<script>
+function myFunction() {
+
+  navigator.clipboard.writeText("117323012001091500000000");
+} 
+</script>
 
 {% endblock content %}

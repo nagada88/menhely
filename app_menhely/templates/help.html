@@ -20,12 +20,65 @@
 
 </section>
 
-<div class="container-flud">
+<div class="container-fluid">
     <div class="row videoWrapper">
         <iframe width="560" height="100%" src="https://www.youtube.com/embed/eZAn_K8PIns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
+<section class="backgrounded-section">   
+    <div class="container-fluid onkentes">
+        <div class="row">
+            <div class="col-xl-6 col-xs-12 col-sm-12">
+                <div class="nempenzbeli">
+                <h2>Hogyan támogathasz még?</h2>
+                    <p>A pénzügyi támogatáson kívül számos módja van, amivel tudsz segíteni a menhelyen lakó állatoknak: </p>
+                    <p>
+                    <ul>
+                        <li> élelem (normál és hipoallergén kutya és cica tápok) </li>
+                        <li> takarók, fekhelyek, kutyaház (kérlek egyeztessünk, amennyiben tudnál hozni)  </li>
+                        <li> gumikesztyűk, kézfertőtlenítő folyadékok, fertőtlenítő  </li>
+                        <li> gyógyszerek, probiotikumok, speciális állat tápok (előzetes megbeszélés alapján)  </li>
+                        <li> mosható, strapabíró, rágcsálható gumijátékok   </li>
+                        <li> építőanyagok, műfű (előzetes megbeszélés alapján) </li>
+                        <li> önkéntes munka (kérlek egyeztessünk) </li>
+                    </ul>
+                    </p><br>
+                    <p>Hálásan köszönünk minden adományt, amivel hozzájárultok állataink megmentéséhez! Amennyiben a fentebb felsoroltakban, vagy bármiben tudsz segíteni, 
+                    amivel állataink jólétét biztosíthatjuk kérlek keress a facebookos messenger elérhetőségen vagy telefonon.</p>
 
+                </div>
+            </div>
+            <div class="col-xl-6 col-xs-12 col-sm-12">
+                <img src={% static '/app_menhely/images/help1.jpg' %} class="nempenzbelikep"/>
+            </div>            
+        </div>
+    </div>
+</section>
 
+<script type="text/javascript">
+
+let last_known_scroll_position = 0;
+let ticking = false;
+
+function doSomething(scroll_pos) {
+  // Do something with the scroll position
+  document.getElementsByClassName('nempenzbeli')[0].style.transform = 'translateX(' + scroll_pos + '%)';
+  scroll_pos = -1*scroll_pos;
+  document.getElementsByClassName('nempenzbelikep')[0].style.transform = 'translateX(' + scroll_pos + '%)';
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY*0.005;
+
+  if (!ticking && ($(window).width() > 1200)){
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+</script>
 {% endblock content %}

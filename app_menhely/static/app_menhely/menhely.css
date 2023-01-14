@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 /* NAVBAR ITEMS */
 .brand-logo{
   height:50px;
-  padding-right: 100px;
+  padding-right: 50px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -24,15 +24,11 @@
   margin:0 auto;
   padding: 0 auto;
   font-family: Unica One;
-  font-size: 24px;
+  font-size: 22px;
   width: 100%;
   justify-content: space-between;
   padding-right: 50px;
 }
-
-/* .navbar .nav-item.menupoint{ */
-    /* padding: 1.5vw 2vw 1vw 2vw; */
-/* } */
 
 @media (max-width: 576px){
   .owl-carousel .prev-slide{
@@ -68,9 +64,51 @@
   height: 300px;
   object-fit: cover;
   }
+  .carousel-inner{
+     height: 40vw;
+  }
+  .custom-shape-divider-bottom-1673471490{
+    display: none;
+    visibility: hidden;   
+  }
+    .custom-shape-divider-top-1673618994{
+    display: none;
+    visibility: hidden;   
+  }
+  
+  h1{
+      font-size: 2rem;
+  }
+  .bemutatkozaskartya{
+    padding: 20px;
+  }
+  .hirek-bemutatkozas{
+      max-width: 100%;
+  }
+  .contacts{
+      padding-bottom: 50px;
+      padding-top: 50px;
+  }
+  .nempenzbelikep{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    width: 100%;
+  }
+  .nempenzbeli{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
+
+
+
+
 @media (min-width: 576px){
+  h1{
+      font-size: 3rem;
+  }
   .allatkartya{
     width: 95%;
     padding-top: 100px;
@@ -106,12 +144,38 @@
   height: 300px;
   object-fit: cover;
   }
+  .hirlista{
+    max-width: 85%;
+  }
+  .bemutatkozaskartya{
+    padding: 30px;
+  }
+  .hirek-bemutatkozas{
+      max-width: 85%;
+  }
+  .contacts{
+      padding-bottom: 50px;
+      padding-top: 50px;
+  }
+  .nempenzbelikep{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    width: 100%;
+  }
+  .nempenzbeli{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 
 @media (min-width: 768px) {
   header .navbar-default {
     padding: 20px;
+  }
+  .intro-gap{
+      height: 50px;
   }
   .navbar-brand {
     -ms-transform: translateY(-2px);
@@ -127,7 +191,7 @@
   }
   
   .hirlista{
-    max-width: 75%;
+    max-width: 65%;
   }
   .owl-carousel .prev-slide{
       left: -33px;
@@ -139,6 +203,16 @@
     top: -50px;
     font-size: 24px;
     width: 50%;
+  }
+  .carousel-inner{
+     height: 40vw;
+  }
+  .bemutatkozaskartya{
+        padding: 100px;
+  }
+  .contacts{
+      padding-bottom: 0;
+      padding-top: 0;
   }
 }
 
@@ -162,13 +236,38 @@
   .owl-carousel .next-slide{
       right: -33px;
   }
+  .hirlista{
+    max-width: 50%;
+  }
+  .segitsleiras p{
+    max-width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .hirlista{
+    max-width: 100%;
+  }
+  .nempenzbelikep{
+    height: 600px;
+    width: auto;
+  }
+  .bemutat{
+    padding-right: 50px;
+  }
 
 }
 
 @media (min-width: 1400px) {
   
   .hirlista{
-    max-width: 85%;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1600px) {
+  
+  .hirlista{
+    max-width: 80%;
   }
 }
 
@@ -210,11 +309,21 @@ ul.navbar-nav>li.nav-item>a.nav-link.custom{
     display: inline-block;
 }
 
+ul.navbar-nav>li.nav-item>a:active{
+    color: orange !important;
+}
+
+ul.navbar-nav>li.nav-item{
+  transition: 0.3s linear;
+}
+
+ul.navbar-nav>li.nav-item:hover{
+  transform: scale(1.1);
+}
 
 /* OVERWRITE BASIC ELEMENTS */
 h1{
   font-family: 'Rubik Distressed', cursive;
-  font-size: 3rem;
   text-transform: uppercase;
   margin: 10px auto;
   text-align: center;
@@ -224,7 +333,7 @@ h1{
 
 h2{
   font-family: 'Baloo Thambi 2', cursive;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 
@@ -270,14 +379,58 @@ img {
 }
 
 /* INTRODUCTION - HIREK */
+.hirek-bemutatkozas{
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 16px;
+  text-align: justify;
+  color: #69786e;
+  justify-content: center;
+  line-height: 150%;
+  font-family: Open Sans,sans-serif;
+  background-blend-mode: lighten;
+  /* line-height: 1.5; */
+}
+
+.bemutatkozaskartya{
+    background: #e6d8b8;
+    border-radius: 50px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
+  box-shadow:hsl(20, 00%, 40%) 0 0 40px;
+}
+
+.bemutat{
+  color: #403e3e;
+}
+.hirek-bemutatkozas h2{
+  font-size: 30px;
+  font-weight: 900;
+  color: #403e3e;
+}
+
 .introduction-section{
   background: #e6d8b8;
+}
+
+.bemutat1{
+  border-radius: 40px;
+  width:80%;
+  height: auto;
+  object-fit: cover;
+  transform: translateY(-40px) translateX(8vw);
+  box-shadow:hsl(40, 20%, 10%) 0 0 20px;
 }
 
 .introduction{
   min-height: 600px;
   padding-left: 6vw; 
   padding-right: 6vw;
+}
+
+.bemutatkozas{
+    font-family: 'Vollkorn';
+    font-size: 20px;
+    font-weight: 200;
 }
 
 .activity{
@@ -511,13 +664,15 @@ img {
 .orokbefogadas-feltetelek{
   position: absolute !important;
   left: 50%;
+  height: 500px;
   transform: translateX(-50%);
-  top: -200px;
+  top: -250px;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
   box-shadow:hsl(20, 00%, 20%) 0 0 20px;
   background: #d4d1cb;
-  padding: 2vw 3vw;
+  padding: 2vw 4vw;
+  line-height: 2;
   font-family: Open Sans,sans-serif;
   display: inline-block;
   color: #000;
@@ -732,12 +887,12 @@ max-width: 100%;
 
 .filterfield{
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .filterfield select{
     font-family: 'Baloo Thambi 2', cursive;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .form-submit-button {
@@ -790,12 +945,12 @@ opacity:0.8;
 .map-container{
   
   position:relative;
-  height:600px;
+  height:300px;
 }
 .map-container iframe{
   left:0;
   top:0;
-  height: 600px;
+  height: 300px;
   width:100%;
   position:absolute;
 }
@@ -851,8 +1006,10 @@ margin-bottom: 0px;
 }
 
 .segitsleiras h2{
-  font-size:28px;
+  font-size:33px;
+  font-weight: 800;
 }
+
 
 .segitscard{
   height: 450px;
@@ -917,6 +1074,45 @@ margin-bottom: 0px;
   transform: scale(1.05);
 }
 
+.onkentes{
+    min-height: 1000px;
+    /* padding-top: 300px; */
+    /* padding-bottom: auto;    */
+}
+
+.nempenzbeli{
+    height: 800px;
+    width: 100%;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
+    box-shadow:hsl(20, 00%, 20%) 0 0 40px;
+    background: #d4d1cb;
+    font-family: 'Baloo Thambi 2';
+    font-size: 17px;
+    line-height: 2;
+    display: inline-block;
+    padding: 100px;
+    padding-right: 300px;
+    color: #000;
+    text-align: justify; 
+}
+
+.nempenzbeli h2{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.nempenzbelikep{
+  /* position: absolute; */
+  margin-top: 200px;
+  /* margin-bottom: auto; */
+  width: auto;
+  object-fit: cover;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.07);
+  box-shadow:hsl(20, 00%, 20%) 0 0 20px;
+}
+
 .tulajdonsagikonnagy{
   height:35px;
 }
@@ -926,26 +1122,26 @@ margin-bottom: 0px;
 }
 
 /* FOOTER */
+.footerimage{
+  display: flex;
+  justify-content: center;
+}
+
+.footerimage img{
+    height: 200px;
+}
+
 .footer{
   background: #3d3d3d;
-}
-
-.followus{
-  font-family: 'Rubik Distressed', cursive;
-  font-size: 20px;
-  text-align: center;
-  color: #dedede;
-}
-
-.followus a{
-  display: inline;
 }
 
 .contacts{
   text-align: center;
   color: #dedede;
-  font-family: Vollkorn;
-  font-size: 15px;
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .contacts img{
@@ -954,8 +1150,10 @@ margin-bottom: 0px;
 }
 
 .socicon{
-  transition: 0.3s linear;
+  transition: 0.1s linear;
+  transform:scale(1.2);
   -webkit-backface-visibility: hidden;
+  color: #969595;
 }
 
 .socicon:hover{
@@ -964,7 +1162,7 @@ margin-bottom: 0px;
 
 
 /* CAROUSEL DIVIDER */
-.custom-shape-divider-bottom-1668442914 {
+.custom-shape-divider-bottom-1673471490 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -973,15 +1171,36 @@ margin-bottom: 0px;
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1668442914 svg {
+.custom-shape-divider-bottom-1673471490 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 98px;
+}
+
+.custom-shape-divider-bottom-1673471490 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-top-1673618994 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1673618994 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 143px;
+    height: 41px;
 }
 
-.custom-shape-divider-bottom-1668442914 .shape-fill {
-      fill: #FFFFFF;
+.custom-shape-divider-top-1673618994 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* OWL EXTRA */
@@ -1060,6 +1279,8 @@ span.img-text:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .paypal{
@@ -1076,7 +1297,7 @@ span.img-text:hover {
 }
 
 .languages{
-  width: 70px;
+  min-width: 170px;
 }
 
 .languages img{
@@ -1084,6 +1305,10 @@ span.img-text:hover {
   width:30px;
   transition: 0.1s linear;
   opacity: 0.7;
+}
+
+.languages a{
+  padding: 5px;
 }
 
 .languages img:hover{

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-28 22:36+0100\n"
+"POT-Creation-Date: 2023-01-14 15:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,171 +18,303 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\allatmenhely\settings.py:126
+#: .\allatmenhely\settings.py:133
 msgid "Magyar"
 msgstr "Hungarian"
 
-#: .\allatmenhely\settings.py:127
+#: .\allatmenhely\settings.py:134
 msgid "Angol"
 msgstr "English"
 
-#: .\allatmenhely\settings.py:128
+#: .\allatmenhely\settings.py:135
 msgid "Német"
 msgstr "German"
 
-#: .\app_menhely\models.py:19 .\app_menhely\models.py:34
+#: .\app_menhely\models.py:20 .\app_menhely\models.py:35
 msgid "kutya"
 msgstr "dog"
 
-#: .\app_menhely\models.py:20
+#: .\app_menhely\models.py:21
 msgid "cica"
 msgstr "cat"
 
-#: .\app_menhely\models.py:21
+#: .\app_menhely\models.py:22
 msgid "egyéb"
 msgstr "other"
 
-#: .\app_menhely\models.py:24
+#: .\app_menhely\models.py:25
 msgid "kistestű"
 msgstr "tiny"
 
-#: .\app_menhely\models.py:25
+#: .\app_menhely\models.py:26
 msgid "közepes testű"
 msgstr "medium"
 
-#: .\app_menhely\models.py:26
+#: .\app_menhely\models.py:27
 msgid "nagytestű"
 msgstr "large"
 
-#: .\app_menhely\models.py:29
+#: .\app_menhely\models.py:30
 msgid "fiú"
 msgstr "boy"
 
-#: .\app_menhely\models.py:30
+#: .\app_menhely\models.py:31
 msgid "lány"
 msgstr "girl"
 
-#: .\app_menhely\models.py:34
+#: .\app_menhely\models.py:35
 msgid "kutya/cica"
 msgstr "dog/kitten"
 
-#: .\app_menhely\models.py:35
+#: .\app_menhely\models.py:36
 msgid "kicsi"
 msgstr "small"
 
-#: .\app_menhely\models.py:35
+#: .\app_menhely\models.py:36
 msgid "méret"
 msgstr "size"
 
-#: .\app_menhely\models.py:36
+#: .\app_menhely\models.py:37
 msgid "fiu"
 msgstr "boy"
 
-#: .\app_menhely\models.py:36
+#: .\app_menhely\models.py:37
 msgid "ivar"
 msgstr "gender"
 
-#: .\app_menhely\templates\allat.html:23 .\app_menhely\templates\hir.html:13
+#: .\app_menhely\models.py:56
+msgid "kiemelt kép"
+msgstr ""
+
+#: .\app_menhely\models.py:100
+msgid "galéria kép"
+msgstr ""
+
+#: .\app_menhely\templates\allat.html:24 .\app_menhely\templates\hir.html:13
 msgid "Vissza"
 msgstr "Back"
 
-#: .\app_menhely\templates\allat.html:91
+#: .\app_menhely\templates\allat.html:92
 msgid "Mielőtt Örökbefogadnál"
 msgstr "Before you Adopt"
 
-#: .\app_menhely\templates\allat.html:92
-msgid ""
-"Ha ezen az oldalon jársz, feltehetően már fontolgatod magadban, hogy a "
-"leendő kutyádat menhelyről fogadod majd örökbe. Ha teheted, látogass el "
-"hozzánk, ismerkedj meg a kutyáinkkal, találkozz az önkénteseinkkel – örömmel "
-"körbevezetünk téged a menhelyen, és szívesen válaszolunk a kérdéseidre."
-msgstr ""
-
-#: .\app_menhely\templates\allat.html:93
-msgid ""
-"A kutyáink a legkülönbözőbb okokból kerültek a gondozásunkba: némelyikük "
-"korábban kóbor kutyaként küzdött a túlélésért, másokat a gazdája adott le az "
-"életkörülményei megváltozására hivatkozva. Vannak, akik balesetet szenvedtek "
-"és ezt követően kerültek a gondozásunkba, vannak olyanok is, akiket kidobtak "
-"az út mellé vagy bedobtak a menhely udvarára, de olyanok is akadnak, akiket "
-"korábbi gazdájuk rendszeresen és súlyosan bántalmazott. Kutyáink számára a "
-"menhely egy biztonságos, kiszámítható környezet, ahol igyekszünk a "
-"lehetőségekhez mérten a lehető legjobb körülményeket biztosítani a számukra."
-msgstr ""
-
-#: .\app_menhely\templates\allat.html:100
+#: .\app_menhely\templates\allat.html:103
 msgid "TOVÁBBI GAZDIKERESŐK"
 msgstr "FURTHER ANIMALS TO ADOPT"
 
-#: .\app_menhely\templates\fogadjorokbe.html:15
+#: .\app_menhely\templates\bemutatkozas.html:14
+msgid "BEMUTATKOZÁS"
+msgstr "INTRODUCTION"
+
+#: .\app_menhely\templates\bemutatkozas.html:20
+#: .\app_menhely\templates\hirek.html:50
+msgid "Kik Vagyunk?"
+msgstr "Who we are?"
+
+#: .\app_menhely\templates\bemutatkozas.html:24
+#: .\app_menhely\templates\hirek.html:54
+msgid ""
+"Az Ágica Sérültállat Menedéke Alapítvány története 2015-ig nyúlik vissza. "
+"Zachariás Ágnes (Ágica) - a menhely alapítója - eddigre már számtalan "
+"állatnak adott menedéket saját otthonában. 2015-ben édesapja örökségének "
+"ráfordításával kezdte építeni a menhelyét először otthonában, majd Solt egy "
+"külterületi ingatlanján. A menhely mára már számtalan olyan sérült, öreg, "
+"beteg állatnak adott otthont, akiknek máshogy nem lett volna esélyük a "
+"túlélésre."
+msgstr ""
+"The history of the Ágica Animal Shelter Foundation dates back to 2015. Ágnes"
+" Zacharias (Ágica) - the founder of the shelter - has already sheltered "
+"countless animals in her own home. In 2015, she started building her shelter,"
+" first in her home, and then on a property outside Solt, using her father's "
+"inheritance. The shelter has now housed countless injured, old and sick "
+"animals who otherwise would not have had a chance to survive."
+#: .\app_menhely\templates\bemutatkozas.html:25
+msgid ""
+" A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli "
+"mindennapjait, keresi gazdáját. Az évek során mentettünk már teljesen "
+"reménytelen állápotban lévő kutyát, cicát, de volt hogy védett madarat és "
+"lovat is. A rosszabb állapotban lévő lakók Ágica otthonában leltek "
+"biztonságos otthonra. Köztük 4 kocsis kutyus, sok öreg, idős, beteg kutya, "
+"és FIV vírussal fertőzött cicusok. A menhelyen általában ketten végzik a "
+"mindennapi munkát Ágicával, otthonában egyedül gondozza az állatokat."
+msgstr ""
+"At the two locations (Ágica's home and the site), an average of 80 animals "
+"live their daily lives, looking for their owner. Over the years, we have "
+"rescued dogs and cats in a completely hopeless condition, but we have also "
+"saved birds and horses. Residents in worse condition found a safe home in "
+"Ágica's home. Among them are 4 carriage dogs, many old, elderly, sick dogs "
+"and cats infected with the FIV virus. At the shelter, two people usually do "
+"the daily work with Ágica, she takes care of the animals alone at home."
+#: .\app_menhely\templates\bemutatkozas.html:26
+#: .\app_menhely\templates\hirek.html:56
+msgid ""
+"A menhely célkitűzése, hogy olyan sérült, beteg, kiszolgáltatott állatoknak "
+"is jusson segítség, akiknek máshogy nincs esély túlélni. Azok a "
+"szerencsésebb állatok pedig, akiknek volt esélyük rehabilitációra "
+"folyamatosan keresik szerető gazdijukat, ahol igazi családtagként tekintenek "
+"rájuk. A honlapon örökbefogadható kutyáink és gazdára talált kutyáink egy "
+"része is megtalálható. Amennyiben örökbefogadáson gondolkozol, nézz szét "
+"gazdikereső állataink között. "
+msgstr ""
+"The aim of the shelter is to provide help to injured, sick and vulnerable "
+"animals who otherwise have no chance of survival. And the luckier animals "
+"who had a chance to be rehabilitated are constantly looking for their loving"
+" owners, where they are seen as real family members. Some of our adoptable "
+"dogs and some of our dogs found owners can be found on the website. If you "
+"are thinking about adoption, take a look at our animals looking for a home."
+#: .\app_menhely\templates\bemutatkozas.html:28
+#: .\app_menhely\templates\hirek.html:58
+#, python-format
+msgid ""
+"Az alapítvány működését alapvetően befolyásolja a támogatóink által adott "
+"adó 1%%, a pénzügyi és tárgyi adományok. Amennyiben lehetőséged van rá és "
+"szeretnéd munkánkat segíteni, akár csak egy kávé árával is, nézz szét a "
+"lehetőséget között a 'segíts' oldalon. "
+msgstr ""
+"The operation of the foundation is fundamentally influenced by the tax 1 percentage "
+"given by our supporters, financial and material donations. If you have the "
+"opportunity and would like to help our work, even with the price of a "
+"coffee, take a look at the possibilities on the 'help' page."
+#: .\app_menhely\templates\fogadjorokbe.html:18
 msgid "GAZDIRA VÁRUNK"
 msgstr "WAITIN' FOR A MASTER"
 
-#: .\app_menhely\templates\fogadjorokbe.html:42
+#: .\app_menhely\templates\fogadjorokbe.html:47
 msgid "lássuk"
 msgstr "let's see"
 
-#: .\app_menhely\templates\help.html:13
+#: .\app_menhely\templates\help.html:17
 msgid "SEGÍTS"
 msgstr "HELP US"
 
-#: .\app_menhely\templates\helpcards.html:9
+#: .\app_menhely\templates\helpcards.html:10
 msgid "Támogassa Menhelyünket"
 msgstr "Support our Shelter"
 
-#: .\app_menhely\templates\helpcards.html:10
-#, fuzzy, python-format
-#| msgid ""
-#| "Menhelyünk legfőbb forrása az adó 1%% felajánlások és magán adományozók"
+#: .\app_menhely\templates\helpcards.html:11
+#, python-format
 msgid ""
-"Menhelyünk legfőbb forrásai az adó 1%% felajánlások és magán adományozók "
-"által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói "
-"számára."
-msgstr "The main source of our shelter is tax 1%% donations and private donors"
+"Közhasznú Alapítványunk adományokból és adó 1%% jóváírásból tartja fenn "
+"magát. Minden apró segítséget hálásan köszönünk! Ha csak havi 1 kávé árát rá "
+"tudod szánni, hogy mentvényeink új esélyt kapjanak, azzal is rengeteget "
+"segítettél. Ha sokan így gondolják, akkor pedig távlati céljainkat is el "
+"tudjuk érni. Pénzügyileg az alábbi módokon tudsz segíteni."
+msgstr ""
+"Our Public Foundation is supported by donations and a 1 percentage tax credit. Any "
+"little help is gratefully appreciated! If you can dedicate just the price of"
+" 1 coffee per month to give our rescues a new chance, you have helped a lot."
+" If many people think so, then we can achieve our long-term goals. You can "
+"help financially in the following ways."
+#: .\app_menhely\templates\helpcards.html:30
+msgid "Paypalon keresztül az alábbi gombra nyomva tud nekünk segíteni"
+msgstr "You can donate via paypal by clicking on the button"
 
-#: .\app_menhely\templates\hir.html:36
+#: .\app_menhely\templates\helpcards.html:46
+msgid "Banki átutalás"
+msgstr "Bank transfer"
+
+#: .\app_menhely\templates\helpcards.html:50
+msgid "Számlaszám másolása"
+msgstr "Copy BankAcc Number"
+
+#: .\app_menhely\templates\helpcards.html:54
+msgid "Bankkártyás fizetés"
+msgstr "Pay with debit card"
+
+#: .\app_menhely\templates\helpcards.html:55
+msgid ""
+"Bankkártyás fizetésre saját oldalunkon nincs lehetőség, viszont gyűjtés "
+"indult az adjukossze.hu oldalon, ahol különböző összegekkel támogathasz akár "
+"egyszeri, akár rendszeres módon."
+msgstr ""
+"It is not possible to pay by bank card on our own site, but a donation has"
+" been started on the adjukossze.hu site, where you can support with "
+"different amounts, either one-time or regularly."
+#: .\app_menhely\templates\helpcards.html:56
+msgid "Bankkártyával adományozok"
+msgstr "Donate by credit card"
+#: .\app_menhely\templates\hir.html:37
 msgid "TOVÁBBI HÍREINK"
 msgstr "FURTHER NEWS"
 
-#: .\app_menhely\templates\hirek.html:42
+#: .\app_menhely\templates\hirek.html:43
+msgid "ÁGICA ÁLLATOTTHONA SOLT"
+msgstr "ÁGICA'S ANIMAL SHELTER SOLT"
+#: .\app_menhely\templates\hirek.html:55
+msgid ""
+" A két helyszínen (Ágica otthonában és a telephelyen) átlagban 80 állat éli "
+"mindennapjait, keresi gazdáját. Az évek során mentettünk már teljesen "
+"reménytelen állápotban lévő kutyát, cicát, de volt hogy védett madarat és "
+"lovat is. A rosszabb állapotban lévő lakók Ágica otthonában leltek "
+"biztonságos otthonra. Köztük 4 kocsis kutyus, sok öreg, idős, beteg kutya, "
+"és FIV vírussal fertőzött cicusok."
+msgstr ""
+"At the two locations (Ágica's home and the site), an average of 80 animals "
+"live their daily lives, looking for their owner. Over the years, we have "
+"rescued dogs and cats in a completely hopeless condition, but we have also "
+"saved birds and horses. Residents in worse condition found a safe home in "
+"Ágica's home. Among them are 4 carriage dogs, many old, elderly, sick dogs "
+"and cats infected with the FIV virus."
+#: .\app_menhely\templates\hirek.html:70
 msgid "HÍREINK"
 msgstr "NEWS"
 
-#: .\app_menhely\templates\hirlista.html:22
+#: .\app_menhely\templates\hirlista.html:23
 msgid "Elolvasom"
 msgstr "I'll read it"
 
-#: .\app_menhely\templates\main.html:48
+#: .\app_menhely\templates\main.html:65
 msgid "kezdőlap"
 msgstr "home page"
 
-#: .\app_menhely\templates\main.html:51
+#: .\app_menhely\templates\main.html:68
 msgid "bemutatkozás"
 msgstr "introduction"
 
-#: .\app_menhely\templates\main.html:54
+#: .\app_menhely\templates\main.html:71
 msgid "fogadj örökbe"
 msgstr "adopt me"
 
-#: .\app_menhely\templates\main.html:57
+#: .\app_menhely\templates\main.html:74
+msgid "gazdira leltünk"
+msgstr "adopted"
+
+#: .\app_menhely\templates\main.html:77
 msgid "segíts"
 msgstr "help"
 
-#: .\app_menhely\templates\main.html:97
-msgid "KÖVESSEN MINKET"
-msgstr "FOLLOW US"
+#: .\app_menhely\templates\main.html:80
+msgid "kapcsolat"
+msgstr "contact"
 
+#: .\app_menhely\templates\main.html:128
+msgid "nyitvatartás"
+msgstr "opening hours"
+#: .\app_menhely\templates\main.html:129
+msgid "H-P: "
+msgstr "Mon-Fri:"
+#: .\app_menhely\templates\main.html:130
+msgid "SZ: "
+msgstr "SAT:"
+#: .\app_menhely\templates\main.html:131
+msgid "V: "
+msgstr "SUN:"
+#: .\app_menhely\templates\orokbefogadott.html:19
+msgid "GAZDIRA LELTÜNK"
+msgstr "ADOPTED"
+
+#: .\app_menhely\templates\orokbefogadott.html:22
+msgid "Az oldalra feltöltött állatok közül gazdira talált eddig:"
+msgstr ""
+"From the animals uploaded to site there were adopted so "
+"far:"
 #: .\app_menhely\templates\tevekenyseg.html:10
 msgid "Menhely és Menedék"
 msgstr "Shelter and Refuge"
 
 #: .\app_menhely\templates\tevekenyseg.html:11
-msgid ""
-"Solt határában található menhelyünk, amely terheltségtől függően 40-70 "
-"állatnak nyújt menedéket."
-msgstr ""
-"Our shelter is located on the outskirts of Solt, which provides shelter for "
-"40-70 animals, depending on the load."
+msgid "A menhely Ágica otthonával együtt ~80 kutyának és cicának ad menedéket."
+msgstr "Together with Ágica's home, the shelter shelters ~80 dogs and cats."
 
 #: .\app_menhely\templates\tevekenyseg.html:15
 msgid "Mentés és Orvosi Ellátás"
@@ -190,11 +322,9 @@ msgstr "Rescue and Medical Care"
 
 #: .\app_menhely\templates\tevekenyseg.html:16
 msgid ""
-"Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is "
-"foglalkozunk"
-msgstr ""
-"We also deal with the rescue and medical care of injured animals in "
-"difficult situations"
+"Célunk, hogy a nehéz helyzetbe jutott, sérült, beteg állatok is kaphassanak "
+"újabb esélyt."
+msgstr "Our goal is to give a new chance for the injured, old, sick animals."
 
 #: .\app_menhely\templates\tevekenyseg.html:20
 msgid "Örökbeadás"
@@ -202,6 +332,37 @@ msgstr "Bequest"
 
 #: .\app_menhely\templates\tevekenyseg.html:21
 msgid ""
-"Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)."
+"A rehabilitált, jó állapotban lévő állataink örökbefogadhatók. Nézz szét a "
+"honlapon!"
 msgstr ""
-"Of course, dogs at our shelter (with some exceptions, they can be adopted)."
+"Our animals that are rehabilitated and in good condition can be adopted. "
+"Check out the website!"
+#, fuzzy, python-format
+#~ msgid ""
+#~ "Menhelyünk legfőbb forrásai az adó 1%% felajánlások és magán adományozók "
+#~ "által utalt összegek. Az alábbi módokon tudsz segíteni menhelyünk kis lakói "
+#~ "számára."
+#~ msgstr ""
+#~ "The main sources of our shelter are tax 1%% donations and amounts "
+#~ "transferred by private donors. You can help the little residents of our "
+#~ "shelter in the following ways."
+#~ msgid "KÖVESSEN MINKET"
+#~ msgstr "FOLLOW US"
+
+#~ msgid ""
+#~ "Solt határában található menhelyünk, amely terheltségtől függően 40-70 "
+#~ "állatnak nyújt menedéket."
+#~ msgstr ""
+#~ "Our shelter is located on the outskirts of Solt, which provides shelter for "
+#~ "40-70 animals, depending on the load."
+#~ msgid ""
+#~ "Nehéz helyzetbe jutott, sérült állatok mentésével és orvosi ellátásával is "
+#~ "foglalkozunk"
+#~ msgstr ""
+#~ "We also deal with the rescue and medical care of injured animals in "
+#~ "difficult situations"
+
+#~ msgid ""
+#~ "Természetesen menhelyünkön lévő kutyák (néhány kivétellel örökbefogadhatók)."
+#~ msgstr ""
+#~ "Of course, dogs at our shelter (with some exceptions, they can be adopted)."
