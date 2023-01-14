@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-lg-8 col-md-12 pt-md-3 pt-lg-0 hirdescription">
                             <h2><center>{{hir.cim}}</center></h2><br>
-                            <div>{{hir.tartalom}}</div><br>
+                            <div>{{hir.tartalom|linebreaks}}</div><br>
                             <p class="datum">{{ hir.created_at|date:"M d, Y"  }}</p>
                         </div>
                     </div>
