@@ -97,7 +97,10 @@
   }
   .nempenzbeli{
     margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 40px;
+    /* margin-bottom: 100px; */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -165,7 +168,10 @@
   }
   .nempenzbeli{
     margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    /* margin-bottom: 100px; */
+    padding-left: 100px;
+    padding-right: 300px;
   }
 }
 
@@ -254,6 +260,12 @@
   .bemutat{
     padding-right: 50px;
   }
+  .nempenzbeli{
+    padding-top: 70px;
+    /* margin-bottom: 100px; */
+    padding-left: 40px;
+    padding-right: 180px;
+  }
 
 }
 
@@ -261,6 +273,12 @@
   
   .hirlista{
     max-width: 90%;
+  }
+  .nempenzbeli{
+    padding-top: 100px;
+    /* margin-bottom: 100px; */
+    padding-left: 100px;
+    padding-right: 13vw;
   }
 }
 
@@ -1095,12 +1113,10 @@ margin-bottom: 0px;
     background: #d4d1cb;
     font-family: 'Baloo Thambi 2';
     font-size: 17px;
-    line-height: 2;
+    line-height: 1.5;
     display: inline-block;
-    padding: 100px;
-    padding-right: 300px;
     color: #000;
-    text-align: justify; 
+    /* text-align: justify;  */
 }
 
 .nempenzbeli h2{
