@@ -32,7 +32,7 @@
 </div>
   
 <div class="container-fluid hirek-bemutatkozas">
-    <div class="pt-5 bemutatkozaskartya" id="bemutatkozaskartya">
+    <div class="pt-5 bemutatkozaskartya">
         <div class="row">
             <div class="col-md-12"><h2>{% trans "Kik Vagyunk?" %}</h2><hr></div>
         </div>
@@ -66,28 +66,4 @@
 <section class="backgrounded-section">    
 {% include 'helpcards.html' %}
 </section>
-
-<script type="text/javascript">  
-let last_known_scroll_position = 0;
-let ticking = false;
-
-function doSomething(scroll_pos) {
-  // Do something with the scroll position
-  document.getElementById('bemutatkozaskartya').style.transform = 'translateX(' + scroll_pos + '%)';
-}
-
-window.addEventListener('scroll', function(e) {
-  last_known_scroll_position = window.scrollY*0.005;
-
-  if (!ticking && ($(window).width() > 960)){
-    window.requestAnimationFrame(function() {
-      doSomething(last_known_scroll_position);
-      ticking = false;
-    });
-
-    ticking = true;
-  }
-});
-</script>
-
 {% endblock content %}
