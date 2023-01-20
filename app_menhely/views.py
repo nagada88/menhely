@@ -51,23 +51,11 @@ def allat(request):
     kapcsolat = Kapcsolat.objects.all()
     
     allatok = Allat.objects.exclude(pk = allatid)
-    paginator = Paginator(allatok, 6)
+    paginator = Paginator(allatok, 8)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
-    picture_quantity = len(allatpictures)
-    breakpnumber = round(picture_quantity/3.)
-    breakpremaining = picture_quantity%3
-    bplist = [0]
-    if breakpremaining in [0,2]:
-        bplist.append(breakpnumber)
-        bplist.append(2*breakpnumber)
-    elif breakpremaining in [1]:
-        bplist.append(breakpnumber+1)
-        bplist.append(2*breakpnumber+1)
-
-
-    return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures,'bplist': bplist, 'page_obj': page_obj, 'kapcsolat': kapcsolat})
+    return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures, 'page_obj': page_obj, 'kapcsolat': kapcsolat})
 
 
 def hir(request):
