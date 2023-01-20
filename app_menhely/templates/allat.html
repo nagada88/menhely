@@ -104,7 +104,39 @@
     </div>
 </div>
 
-{% include 'orokbefogadhato.html' %}
+<div class="container-fluid">
+    {% for allat in page_obj %}
+    {% if forloop.counter0|divisibleby:4 %}
+        <div class="container-fluid">
+        <div class="row fogadjorokbe">
+    {% endif %}
+        <div class="col-xl-3 col-lg-6 col-md-12 container-fluid">
+          <a href="allat.html?allatid={{ allat.pk }}#vigyelhaza">
+            <div class="wrapperconstraint">
+              <div class="wrapper">
+                  <img src={{ allat.allatmainimage_set.get.photo_tumb.url }} class="img img-responsive full-width photocover photog" >
+                  <div class="description">
+                      {{allat.nev}}
+                  </div>
+              </div>
+            </div>
+          </a>
+        </div>
+    {% if forloop.counter|divisibleby:4  or forloop.last %}
+        </div></div>
+    {% endif %}
+    {% empty %}
+        <div class="row">
+            <div class="col-xl-4"></div>
+            <div class="col-xl-4">
+                <p><h2><b><center class="notfound">{% trans "Nem található ilyen állat :(" %}</center></b></h2></p>
+                <img src={% static 'app_menhely/images/saddog.jpg' %} class="sadanimal" />
+            </div>
+            <div class="col-xl-4"></div>
+        </div>
+    {% endfor %}
+</div>
+
 </section>
 
 
