@@ -53,7 +53,13 @@ def allat(request):
     allatok = Allat.objects.exclude(pk = allatid)
     paginator = Paginator(allatok, 8)
     page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
+    page = request.GET.get('page')
+    try:
+        page_obj = paginator.page(page)
+    except PageNotAnInteger:
+        page_obj = paginator.page(1)
+    except EmptyPage:
+        page_obj = paginator.page(paginator.num_pages)
 
     return render(request, 'allat.html', {'allat': allat, 'allatpictures': allatpictures, 'page_obj': page_obj, 'kapcsolat': kapcsolat})
 
