@@ -36,9 +36,9 @@
                             <p class="tulajdonsag">
                             <b>Ivar:</b> 
                                  {% if 'fiu' in allat.ivar %} 
-                                    <img src="https://img.icons8.com/quill/50/null/experimental-male-quill.png" class="tulajdonsagikonnagy"/>
+                                    <img src={% static '/app_menhely/images/icons8-male-100.png' %} class="tulajdonsagikonnagy"/>
                                 {% else %}
-                                    <img src="https://img.icons8.com/quill/50/null/experimental-female-quill.png" class="tulajdonsagikonnagy"/>
+                                    <img src={% static '/app_menhely/images/icons8-female-100.png' %} class="tulajdonsagikonnagy"/>
                                 {% endif %}
                             <br>
                             <b>Életkor:</b> 
@@ -49,9 +49,9 @@
                                 {% endif %}
                             <b>Ivartalanítva</b>
                                 {% if allat.ivartalanitva %} 
-                                    <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-check-multimedia-kiranshastry-lineal-kiranshastry.png" class="tulajdonsagikonnagy"/>
+                                    <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/null/external-check-multimedia-kiranshastry-lineal-kiranshastry.png" class="tulajdonsagikonnagy"/> igen
                                 {% else %}
-                                    <img src="https://img.icons8.com/external-others-iconmarket/64/null/external-cross-essential-others-iconmarket.png" class="tulajdonsagikonkicsi"/>
+                                    <img src="https://img.icons8.com/external-others-iconmarket/64/null/external-cross-essential-others-iconmarket.png" class="tulajdonsagikonkicsi"/> nem
                                 {% endif %}
                             </p>
                             <hr>
