@@ -31,9 +31,8 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-8 col-md-12 pt-md-5 pt-lg-0">
+                        <div class="col-lg-8 col-md-12 pt-md-5 pt-lg-0 tulajdonsag">
                             <div class="allatnev">{{allat.nev}}</div><br>
-                            <p class="tulajdonsag">
                             <b>Ivar:</b> 
                                  {% if 'fiu' in allat.ivar %} 
                                     <img src={% static '/app_menhely/images/icons8-male-100.png' %} class="tulajdonsagikonnagy"/>
@@ -53,10 +52,12 @@
                                 {% else %}
                                     <img src="https://img.icons8.com/external-others-iconmarket/64/null/external-cross-essential-others-iconmarket.png" class="tulajdonsagikonkicsi"/> nem
                                 {% endif %}
-                            </p>
                             <hr>
-                            <div class="allatleiras">{{allat.leiras}}</div>
+                            
                             <div class="break"></div>
+                        </div>
+                        <div class="row">
+                            <div class="allatleiras">{{allat.leiras}}</div>
                         </div>
                     </div>
                 </div>

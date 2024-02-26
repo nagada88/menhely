@@ -12,4 +12,5 @@ urlpatterns = [
     re_path(r'allat', views.allat, name='allat'),
     re_path(r'hir', views.hir, name='hir'),
     re_path(r'help', views.help, name='help'),
-    re_path("django-check-seo/", include("django_check_seo.urls")),]
+    re_path("django-check-seo/", include("django_check_seo.urls")),
+    path('rosetta/', include('rosetta.urls')),]
