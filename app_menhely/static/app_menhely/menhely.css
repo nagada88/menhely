@@ -657,6 +657,7 @@ img {
 .allatleiras{
   text-align: justify;
   margin-left: 20px;
+  margin-top: 1vw;
 }
 
 .allatadat{
@@ -1024,8 +1025,6 @@ text-align: center;
 .tulajdonsag{
 font-family: Vollkorn;
 font-size: 1rem;
-margin-left: 20px;
-margin-top: -50px;
 margin-bottom: 0px;
 }
 
