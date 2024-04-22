@@ -26,3 +26,8 @@ urlpatterns = i18n_patterns (
     path('admin/', admin.site.urls),
     re_path(r'', include('app_menhely.urls')),
 )   + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+
+admin.site.site_header = "Ágica Solti Menhely Admin"
+admin.site.site_title  = "Ágica Solti Menhely Admin Portál"
+admin.site.index_title = "Üdvözöllek a Ágica Solti Menhely Admin Portál felületén"

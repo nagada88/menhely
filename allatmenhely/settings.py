@@ -25,14 +25,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config('DEBUG', cast=bool, default=False)
 
-ALLOWED_HOSTS = ['www.soltimenhely.hu', 'soltimenhely.hu']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=lambda v: [s.strip() for s in v.split(',')])
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'app_menhely',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,14 +43,10 @@ INSTALLED_APPS = [
     'django_filters',
     'crispy_forms',
     'widget_tweaks',
-    'app_menhely',
     'rosetta',
     'parler',
     'django_check_seo',
     'django.contrib.sites',
-    'cms',
-    'menus',
-    'treebeard',
 ]
 
 SITE_ID = 1
@@ -70,7 +67,7 @@ ROOT_URLCONF = 'allatmenhely.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -96,6 +93,8 @@ DATABASES = {
     }
 }
 
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

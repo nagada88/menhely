@@ -36,7 +36,6 @@ class Allat(models.Model):
     meret = models.CharField(max_length=200, choices=AllatMeret.choices, default=_("kicsi"), verbose_name = _("méret"))
     ivar = models.CharField(max_length=200, choices=Ivar.choices, default=_("fiu"), verbose_name = _("ivar"))
     nev = models.CharField(max_length=200, verbose_name = "név")
-    bekerulesideje = models.DateField()
     szuletesiideje = models.DateField()
     ivartalanitva = models.BooleanField()
     leiras = models.TextField(default="Leírás később érkezik. Amennyiben a képek alapján érdeklődnél, keress facebook messengeren vagy telefonon.")
@@ -50,6 +49,10 @@ class Allat(models.Model):
         self.eletkor = int(((datetime.date.today()  - self.szuletesiideje).days)/365.25)
         print(self.eletkor)
         super().save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = 'Állat'
+        verbose_name_plural = 'Állatok'
 
 class AllatMainImage(models.Model):
     allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
@@ -95,6 +98,10 @@ class AllatMainImage(models.Model):
 
         return True
 
+    class Meta:
+        verbose_name = 'Kiemelt kép'
+        verbose_name_plural = 'Kiemelt kép'
+
 class AllatImage(models.Model):
     allat = models.ForeignKey(Allat, on_delete=models.CASCADE)
     photo = models.ImageField(upload_to='app_menhely/img/photos/', verbose_name = _("galéria kép"))
@@ -139,6 +146,10 @@ class AllatImage(models.Model):
 
         return True            
  
+    class Meta:
+        verbose_name = 'Galéria kép'
+        verbose_name_plural = 'Galéria képek'
+
         
 class Hirek(TranslatableModel):
     translations = TranslatedFields(cim=models.CharField(max_length=200),
@@ -189,6 +200,10 @@ class Hirek(TranslatableModel):
 
     def __str__(self):
         return self.cim
+    
+    class Meta:
+        verbose_name = "Hír"
+        verbose_name_plural = "Hírek"
 
 
 class Bemutatkozas(TranslatableModel):
@@ -239,6 +254,10 @@ class Bemutatkozas(TranslatableModel):
     def __str__(self):
         return self.cim
         
+    class Meta:
+        verbose_name = "Bemutatkozó szöveg"
+        verbose_name_plural = "Bemutatkozó szöveg"
+
 class Kapcsolat(TranslatableModel):
     translations=TranslatedFields(telefonszam = models.CharField(max_length=50),
     nyitvatartashp=models.CharField(max_length=50),
@@ -249,7 +268,16 @@ class Kapcsolat(TranslatableModel):
     )
     
 
+    class Meta:
+        verbose_name = "Kapcsolat"
+        verbose_name_plural = "Kapcsolat"
+
 class Kimutatasok(models.Model):
     title = models.CharField(max_length=50)
     file = models.FileField()
+
+    class Meta:
+        verbose_name = "Kimutatás"
+        verbose_name_plural = "Kimutatások"
+        
     

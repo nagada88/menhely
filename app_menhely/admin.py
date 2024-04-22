@@ -7,9 +7,15 @@ class PictureInline(admin.StackedInline):
     
 class MainPictureInline(admin.StackedInline):
     model = AllatMainImage
-    
+
+    def get_extra(self, request, obj=None, **kwargs):
+        if obj:
+            return 0 # For changing an item
+        else: 
+            return 1 # For adding a new item
+
 class AllatAdmin(admin.ModelAdmin):
-    inlines = [PictureInline, MainPictureInline]
+    inlines = [MainPictureInline, PictureInline]
 
 # Register your models here.
 admin.site.register(Allat, AllatAdmin)
